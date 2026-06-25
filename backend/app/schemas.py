@@ -50,3 +50,21 @@ class AnalyticsData(BaseModel):
 
     class Config:
         from_attributes = True
+
+class ScanReportCreate(BaseModel):
+    image_base64: str
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
+
+class ScanReportOut(BaseModel):
+    id: int
+    user_id: int
+    image_url: str
+    latitude: Optional[float]
+    longitude: Optional[float]
+    plastic_percentage: float
+    status: str
+    created_at: datetime
+
+    class Config:
+        from_attributes = True

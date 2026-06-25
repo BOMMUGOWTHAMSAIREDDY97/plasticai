@@ -1,7 +1,8 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from .database import engine, Base
-from .routers import auth, detections, analytics
+from .routers import auth, detections, analytics, scans
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
@@ -31,7 +32,11 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(detections.router)
 app.include_router(analytics.router)
-# app.include_router(video.router) # Temporarily commented out for fast installation
+app.include_router(scans.router)
+
+import os
+os.makedirs("uploads", exist_ok=True)
+app.mount("/static/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 @app.get("/")
 def read_root():
