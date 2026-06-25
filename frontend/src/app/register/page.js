@@ -26,7 +26,7 @@ export default function Register() {
       const token = await userCredential.user.getIdToken();
       
       // 3. Sync user with local Postgres/SQLite backend
-      await axios.post("http://localhost:8000/auth/sync-user", {
+      await axios.post("https://plasticai.onrender.com/auth/sync-user", {
         email,
         full_name: name,
         role: "operator"

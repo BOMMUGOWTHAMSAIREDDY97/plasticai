@@ -19,7 +19,7 @@ export default function ReportsPage() {
         throw new Error("User credentials expired. Please login again.");
       }
 
-      const response = await fetch("http://localhost:8000/api/v1/reports/generate", {
+      const response = await fetch("https://plasticai.onrender.com/api/v1/reports/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

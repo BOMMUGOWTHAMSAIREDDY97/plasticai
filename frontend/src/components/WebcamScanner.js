@@ -21,7 +21,7 @@ export default function WebcamScanner({ onDetections }) {
   useEffect(() => {
     // Connect to WebSocket
     const connectWs = () => {
-      const ws = new WebSocket("ws://localhost:8000/ws/video");
+      const ws = new WebSocket("wss://plasticai.onrender.com/ws/video");
       
       ws.onopen = () => {
         console.log("Connected to Vision Service");
