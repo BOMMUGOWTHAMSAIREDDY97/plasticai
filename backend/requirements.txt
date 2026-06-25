@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+email-validator
+python-multipart
+opencv-python-headless
+numpy
+websockets
+pandas
+openpyxl
+reportlab
+python-dotenv
+psycopg2-binary
+ultralytics
+firebase-admin
