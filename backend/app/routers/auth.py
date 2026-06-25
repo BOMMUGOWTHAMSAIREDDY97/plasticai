@@ -16,7 +16,7 @@ get_current_user = auth.get_current_user
 
 @router.post("/sync-user", response_model=schemas.User)
 def sync_user(
-    user_info: schemas.UserCreate, 
+    user_info: schemas.UserBase, 
     decoded_token: dict = Depends(auth.verify_firebase_token),
     db: Session = Depends(get_db)
 ):
