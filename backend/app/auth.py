@@ -7,10 +7,20 @@ from typing import Optional
 from sqlalchemy.orm import Session
 from . import database, models
 
+import json
+
 # Initialize Firebase Admin
-cred_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "firebase-credentials.json")
 if not firebase_admin._apps:
-    cred = credentials.Certificate(cred_path)
+    env_creds = os.getenv("FIREBASE_CREDENTIALS")
+    if env_creds:
+        # Load from environment variable (Best for Render/Vercel)
+        cred_dict = json.loads(env_creds)
+        cred = credentials.Certificate(cred_dict)
+    else:
+        # Load from local file
+        cred_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "firebase-credentials.json")
+        cred = credentials.Certificate(cred_path)
+        
     firebase_admin.initialize_app(cred)
 
 security = HTTPBearer()
