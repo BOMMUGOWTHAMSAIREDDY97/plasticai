@@ -86,10 +86,7 @@ def get_admin_reports(
     Retrieve all scan reports (Admin only).
     """
     if current_user.role != "admin":
-        # For testing, let's allow operators to see everything if needed, 
-        # but formally it should raise a 403.
-        # raise HTTPException(status_code=403, detail="Not authorized")
-        pass
+        raise HTTPException(status_code=403, detail="Not authorized")
 
     reports = db.query(models.ScanReport).order_by(models.ScanReport.created_at.desc()).all()
     return reports
