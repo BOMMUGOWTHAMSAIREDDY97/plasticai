@@ -9,6 +9,8 @@ export default function ProfilePage() {
   const [reports, setReports] = useState([]);
   const [loading, setLoading] = useState(true);
   const [saved, setSaved] = useState(false);
+  const [userEmail, setUserEmail] = useState("");
+  const [userName, setUserName] = useState("");
   
   const handleSave = () => {
     setSaved(true);
@@ -30,6 +32,18 @@ export default function ProfilePage() {
       }
     };
     fetchReports();
+
+    // Fetch user details
+    import("../../../firebaseConfig").then(({ auth }) => {
+      import("firebase/auth").then(({ onAuthStateChanged }) => {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            setUserEmail(user.email || "");
+            setUserName(user.displayName || "Customer User");
+          }
+        });
+      });
+    }).catch(err => console.error("Firebase load error:", err));
   }, []);
 
   return (
@@ -74,7 +88,7 @@ export default function ProfilePage() {
       <div className="grid grid-cols-1 gap-8 pt-6 border-t border-glassBorder/30">
         <h2 className="text-2xl font-bold">Preferences</h2>
         
-        {/* Customer Details */}
+        {/* Profile Settings */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,17 +99,17 @@ export default function ProfilePage() {
             <div className="p-2 bg-primary/20 rounded-lg">
               <User className="w-5 h-5 text-primary" />
             </div>
-            <h2 className="text-xl font-semibold">Customer Details</h2>
+            <h2 className="text-xl font-semibold">Account Profile</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-textSecondary">Full Name</label>
-              <input type="text" defaultValue="Admin User" className="w-full bg-surface/50 border border-glassBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" />
+              <input type="text" value={userName} onChange={e => setUserName(e.target.value)} className="w-full bg-surface/50 border border-glassBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-textSecondary">Email Address</label>
-              <input type="email" defaultValue="admin@plasticvision.ai" className="w-full bg-surface/50 border border-glassBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" />
+              <input type="email" value={userEmail} readOnly className="w-full bg-surface/50 border border-glassBorder rounded-xl px-4 py-3 text-white opacity-70 cursor-not-allowed" />
             </div>
           </div>
         </motion.div>
