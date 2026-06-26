@@ -40,7 +40,8 @@ export default function Dashboard() {
         const response = await fetch("https://plasticai.onrender.com/scans/my-reports", {
           headers: {
             "Authorization": `Bearer ${token}`
-          }
+          },
+          cache: "no-store"
         });
         
         if (response.ok) {
