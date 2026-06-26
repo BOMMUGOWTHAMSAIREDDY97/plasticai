@@ -58,21 +58,27 @@ export default function Dashboard() {
     fetchReports();
   }, []);
 
+  const avgDensity = reports.length > 0 ? (reports.reduce((acc, curr) => acc + curr.plastic_percentage, 0) / reports.length) : 0;
+  const criticalAreas = reports.filter(r => r.plastic_percentage > 75).length;
+  const environmentalScore = 100 - Math.round(avgDensity);
+
   const stats = [
-    { title: "Total Plastic Detected", value: "1,248", icon: Box, color: "text-blue-400", bg: "bg-blue-400/20" },
-    { title: "Active Area Scans", value: reports.length, icon: Camera, color: "text-primary", bg: "bg-primary/20" },
-    { title: "Environmental Score", value: "85/100", icon: BarChart3, color: "text-purple-400", bg: "bg-purple-400/20" },
-    { title: "Critical Risk Areas", value: "2", icon: AlertTriangle, color: "text-danger", bg: "bg-danger/20" },
+    { title: "Total Scans Performed", value: reports.length, icon: Camera, color: "text-blue-400", bg: "bg-blue-400/20" },
+    { title: "Avg Garbage Density", value: `${avgDensity.toFixed(1)}%`, icon: Box, color: "text-primary", bg: "bg-primary/20" },
+    { title: "Environmental Score", value: `${environmentalScore}/100`, icon: BarChart3, color: "text-purple-400", bg: "bg-purple-400/20" },
+    { title: "Critical Risk Areas", value: criticalAreas, icon: AlertTriangle, color: "text-danger", bg: "bg-danger/20" },
   ];
 
-  // Dummy Chart Data
+  // Dynamic Chart Data based on actual scans
+  const recentReports = [...reports].reverse().slice(-7);
+  
   const chartData = {
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    labels: recentReports.length > 0 ? recentReports.map(r => new Date(r.created_at).toLocaleDateString(undefined, { weekday: 'short' })) : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     datasets: [
       {
         fill: true,
-        label: 'Plastic Detections',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        label: 'Garbage Density %',
+        data: recentReports.length > 0 ? recentReports.map(r => r.plastic_percentage) : [0, 0, 0, 0, 0, 0, 0],
         borderColor: 'rgba(16, 185, 129, 1)',
         backgroundColor: 'rgba(16, 185, 129, 0.2)',
         tension: 0.4,
