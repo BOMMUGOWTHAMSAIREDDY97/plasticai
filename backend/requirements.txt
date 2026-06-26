@@ -13,5 +13,4 @@ openpyxl
 reportlab
 python-dotenv
 psycopg2-binary
-ultralytics
 firebase-admin
