@@ -21,10 +21,20 @@ export default function ProfilePage() {
     const fetchReports = async () => {
       try {
         const token = localStorage.getItem("token");
+        if (!token) {
+          setLoading(false);
+          return;
+        }
+        
         const res = await fetch("https://plasticai.onrender.com/scans/my-reports", {
           headers: { Authorization: `Bearer ${token}` },
           cache: "no-store"
         });
+        
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        
         const data = await res.json();
         setReports(data);
       } catch (err) {
