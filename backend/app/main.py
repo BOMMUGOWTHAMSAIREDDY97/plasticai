@@ -7,6 +7,15 @@ from .routers import auth, detections, analytics, scans
 # Create database tables
 Base.metadata.create_all(bind=engine)
 
+import subprocess
+import os
+
+# Download AI models if they don't exist
+try:
+    subprocess.run(["python", os.path.join(os.path.dirname(os.path.dirname(__file__)), "download_model.py")], check=True)
+except Exception as e:
+    print(f"Model download failed: {e}")
+
 app = FastAPI(
     title="PlasticVision AI",
     description="Production-grade AI platform for real-time plastic waste detection and analytics",

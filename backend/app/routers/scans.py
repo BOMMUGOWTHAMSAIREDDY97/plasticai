@@ -65,10 +65,16 @@ def capture_scan(
         with open(filepath, "wb") as f:
             f.write(image_data)
             
-        # 3. Analyze image & Geocode
-        # Calculate garbage density based on file size so bigger/more complex images score higher
-        file_size_kb = len(image_data) / 1024
-        mock_percentage = min(99.0, max(5.0, (file_size_kb / 500) * 100)) # e.g. 250KB = 50%
+        from ..services import vision
+        
+        # 3. Analyze image & Geocode using real OpenCV DNN Model
+        detections = vision.process_frame(report_in.image_base64)
+        
+        # Calculate garbage density based on actual objects detected
+        # e.g., 20% density per detected bottle, starting at a base of 5%
+        bottle_count = len(detections)
+        actual_percentage = min(99.0, (bottle_count * 25.0) + 5.0) 
+
         
         location_name = reverse_geocode(report_in.latitude, report_in.longitude)
 
@@ -79,7 +85,7 @@ def capture_scan(
             latitude=report_in.latitude,
             longitude=report_in.longitude,
             location_name=location_name,
-            plastic_percentage=mock_percentage,
+            plastic_percentage=actual_percentage,
             status="processed"
         )
         db.add(new_report)
