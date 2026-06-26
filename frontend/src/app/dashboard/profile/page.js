@@ -74,7 +74,7 @@ export default function ProfilePage() {
       <div className="grid grid-cols-1 gap-8 pt-6 border-t border-glassBorder/30">
         <h2 className="text-2xl font-bold">Preferences</h2>
         
-        {/* Profile Settings */}
+        {/* Customer Details */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,7 +85,7 @@ export default function ProfilePage() {
             <div className="p-2 bg-primary/20 rounded-lg">
               <User className="w-5 h-5 text-primary" />
             </div>
-            <h2 className="text-xl font-semibold">Account Profile</h2>
+            <h2 className="text-xl font-semibold">Customer Details</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
