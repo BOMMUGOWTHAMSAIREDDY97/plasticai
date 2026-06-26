@@ -18,6 +18,9 @@ class User(UserBase):
     class Config:
         from_attributes = True
 
+class RoleUpdate(BaseModel):
+    role: str
+
 class Token(BaseModel):
     access_token: str
     token_type: str
@@ -62,6 +65,7 @@ class ScanReportOut(BaseModel):
     image_url: str
     latitude: Optional[float]
     longitude: Optional[float]
+    location_name: Optional[str]
     plastic_percentage: float
     status: str
     created_at: datetime

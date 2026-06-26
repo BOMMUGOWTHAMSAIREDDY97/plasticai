@@ -52,6 +52,7 @@ class ScanReport(Base):
     image_url = Column(String)
     latitude = Column(Float, nullable=True)
     longitude = Column(Float, nullable=True)
+    location_name = Column(String, nullable=True)
     plastic_percentage = Column(Float, default=0.0)
     status = Column(String, default="processed") # e.g. processed, pending
     created_at = Column(DateTime(timezone=True), server_default=func.now())

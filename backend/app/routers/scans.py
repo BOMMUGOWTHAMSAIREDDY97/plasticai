@@ -1,6 +1,8 @@
 import os
 import base64
 import time
+import urllib.request
+import json
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
@@ -19,6 +21,28 @@ def get_db():
 # Directory to save scan images locally
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+def reverse_geocode(lat, lon):
+    if not lat or not lon:
+        return "Location not provided"
+    try:
+        url = f"https://nominatim.openstreetmap.org/reverse?format=json&lat={lat}&lon={lon}"
+        req = urllib.request.Request(url, headers={'User-Agent': 'PlasticVision/1.0 (Testing)'})
+        with urllib.request.urlopen(req, timeout=5) as response:
+            data = json.loads(response.read().decode())
+            if 'address' in data:
+                addr = data['address']
+                village = addr.get('village') or addr.get('town') or addr.get('suburb') or addr.get('city') or addr.get('county')
+                state = addr.get('state') or addr.get('country')
+                if village and state:
+                    return f"{village}, {state}"
+                elif village:
+                    return village
+                return data.get('display_name', "Unknown Location")
+            return "Unknown Location"
+    except Exception as e:
+        print(f"Geocoding error: {e}")
+        return "Location lookup failed"
 
 @router.post("/capture", response_model=schemas.ScanReportOut)
 def capture_scan(
@@ -41,11 +65,12 @@ def capture_scan(
         with open(filepath, "wb") as f:
             f.write(image_data)
             
-        # 3. Analyze image (Mock YOLO logic for plastic percentage)
-        # In a real scenario, we'd pass image_data to our CV model.
-        # For now, generate a simulated plastic density based on the time.
-        # Let's say between 5.0% and 45.0%
-        mock_percentage = 15.5 + (int(time.time()) % 30)
+        # 3. Analyze image & Geocode
+        # Calculate garbage density based on file size so bigger/more complex images score higher
+        file_size_kb = len(image_data) / 1024
+        mock_percentage = min(99.0, max(5.0, (file_size_kb / 500) * 100)) # e.g. 250KB = 50%
+        
+        location_name = reverse_geocode(report_in.latitude, report_in.longitude)
 
         # 4. Save report to DB
         new_report = models.ScanReport(
@@ -53,6 +78,7 @@ def capture_scan(
             image_url=f"/static/uploads/{filename}",
             latitude=report_in.latitude,
             longitude=report_in.longitude,
+            location_name=location_name,
             plastic_percentage=mock_percentage,
             status="processed"
         )
