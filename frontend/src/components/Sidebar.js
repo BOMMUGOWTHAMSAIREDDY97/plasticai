@@ -37,7 +37,6 @@ export default function Sidebar() {
     { name: "Live Camera", href: "/dashboard/camera", icon: Camera },
     { name: "Analytics", href: "/dashboard/analytics", icon: BarChart2 },
     { name: "Reports", href: "/dashboard/reports", icon: FileText },
-    { name: "Settings", href: "/dashboard/settings", icon: Settings },
     { name: "My Profile", href: "/dashboard/profile", icon: Leaf },
     ...(role === "admin" ? [{ name: "Admin Panel", href: "/dashboard/admin", icon: LayoutDashboard }] : []),
   ];

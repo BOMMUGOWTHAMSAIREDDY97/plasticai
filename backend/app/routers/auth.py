@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
+from typing import List
 from sqlalchemy.orm import Session
 from .. import models, schemas, auth, database
 
@@ -49,3 +50,33 @@ def sync_user(
     db.refresh(db_user)
     return db_user
 
+@router.get("/users", response_model=List[schemas.User])
+def get_all_users(
+    current_user: models.User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    if current_user.role != "admin":
+        raise HTTPException(status_code=403, detail="Not authorized")
+    return db.query(models.User).all()
+
+@router.put("/users/{user_id}/role", response_model=schemas.User)
+def update_user_role(
+    user_id: int,
+    role_update: schemas.RoleUpdate,
+    current_user: models.User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    if current_user.role != "admin":
+        raise HTTPException(status_code=403, detail="Not authorized")
+    
+    if role_update.role not in ["admin", "operator", "government"]:
+        raise HTTPException(status_code=400, detail="Invalid role")
+        
+    user = db.query(models.User).filter(models.User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+        
+    user.role = role_update.role
+    db.commit()
+    db.refresh(user)
+    return user
