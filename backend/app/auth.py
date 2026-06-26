@@ -46,6 +46,18 @@ def get_current_user(
         raise HTTPException(status_code=400, detail="Token does not contain email")
     
     user = db.query(models.User).filter(models.User.email == email).first()
+    
+    # Auto-create the user if they don't exist in the local database!
+    # This completely prevents 404 errors when Render wipes the SQLite database on every redeploy.
     if user is None:
-        raise HTTPException(status_code=404, detail="User not found in local database")
+        user = models.User(
+            email=email, 
+            full_name=decoded_token.get("name") or email.split("@")[0], 
+            role="operator",
+            hashed_password="FIREBASE_MANAGED_AUTO"
+        )
+        db.add(user)
+        db.commit()
+        db.refresh(user)
+        
     return user
