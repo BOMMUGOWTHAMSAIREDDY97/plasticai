@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Layout from "../../components/Layout";
 
 export default function ReportsPage() {
   const [downloading, setDownloading] = useState("");
@@ -19,7 +18,7 @@ export default function ReportsPage() {
         throw new Error("User credentials expired. Please login again.");
       }
 
-      const response = await fetch("https://plasticai.onrender.com/api/v1/reports/generate", {
+      const response = await fetch("http://localhost:8000/api/v1/reports/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +60,7 @@ export default function ReportsPage() {
   };
 
   return (
-    <Layout>
+    <div>
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
         <div>
           <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">Audit & Report Center</h1>
@@ -139,6 +138,6 @@ export default function ReportsPage() {
         </div>
 
       </div>
-    </Layout>
+    </div>
   );
 }
