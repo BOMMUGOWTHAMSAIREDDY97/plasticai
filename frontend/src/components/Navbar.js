@@ -8,7 +8,7 @@ export default function Navbar() {
 
   useEffect(() => {
     // Dynamically import Firebase to avoid server-side rendering issues
-    import("../../firebaseConfig").then(({ auth }) => {
+    import("../firebaseConfig").then(({ auth }) => {
       import("firebase/auth").then(({ onAuthStateChanged }) => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
           if (currentUser) {
