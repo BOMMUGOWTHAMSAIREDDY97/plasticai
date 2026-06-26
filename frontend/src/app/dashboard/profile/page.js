@@ -21,10 +21,12 @@ export default function ProfilePage() {
     const fetchReports = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("https://plasticai.onrender.com/scans/my-reports", {
-          headers: { Authorization: `Bearer ${token}` }
+        const res = await fetch("https://plasticai.onrender.com/scans/my-reports", {
+          headers: { Authorization: `Bearer ${token}` },
+          cache: "no-store"
         });
-        setReports(res.data);
+        const data = await res.json();
+        setReports(data);
       } catch (err) {
         console.error("Failed to fetch reports", err);
       } finally {
