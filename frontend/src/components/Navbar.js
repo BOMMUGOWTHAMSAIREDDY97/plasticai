@@ -1,6 +1,29 @@
+"use client";
+
 import { Bell, Search, UserCircle } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // Dynamically import Firebase to avoid server-side rendering issues
+    import("../../firebaseConfig").then(({ auth }) => {
+      import("firebase/auth").then(({ onAuthStateChanged }) => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+          if (currentUser) {
+            setUser({
+              name: currentUser.displayName || currentUser.email.split("@")[0],
+              email: currentUser.email,
+              photoURL: currentUser.photoURL
+            });
+          }
+        });
+        return () => unsubscribe();
+      });
+    });
+  }, []);
+
   return (
     <header className="h-20 border-b border-glassBorder bg-surface/50 backdrop-blur-xl flex items-center justify-between px-8 sticky top-0 z-10">
       <div className="flex-1 max-w-xl">
@@ -21,10 +44,18 @@ export default function Navbar() {
         </button>
         <div className="flex items-center gap-3 pl-6 border-l border-glassBorder">
           <div className="text-right hidden md:block">
-            <p className="text-sm font-semibold text-textPrimary">Admin User</p>
-            <p className="text-xs text-textSecondary">admin@plasticvision.ai</p>
+            <p className="text-sm font-semibold text-textPrimary">
+              {user ? user.name : "Loading..."}
+            </p>
+            <p className="text-xs text-textSecondary">
+              {user ? user.email : ""}
+            </p>
           </div>
-          <UserCircle className="w-10 h-10 text-textSecondary" />
+          {user && user.photoURL ? (
+            <img src={user.photoURL} alt="Profile" className="w-10 h-10 rounded-full border border-glassBorder" />
+          ) : (
+            <UserCircle className="w-10 h-10 text-textSecondary" />
+          )}
         </div>
       </div>
     </header>
