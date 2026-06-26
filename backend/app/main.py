@@ -29,11 +29,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from .routers import auth, detections, analytics, scans, video
+
 # Include routers
 app.include_router(auth.router)
 app.include_router(detections.router)
 app.include_router(analytics.router)
 app.include_router(scans.router)
+app.include_router(video.router)
 
 import os
 os.makedirs("uploads", exist_ok=True)
