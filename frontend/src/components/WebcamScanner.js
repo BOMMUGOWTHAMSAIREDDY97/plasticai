@@ -7,7 +7,59 @@ export default function WebcamScanner({ onDetections }) {
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [isCapturing, setIsCapturing] = useState(false);
+  const [captureMessage, setCaptureMessage] = useState("");
   const wsRef = useRef(null);
+
+  const captureAndAnalyze = async () => {
+    if (!webcamRef.current) return;
+    setIsCapturing(true);
+    setCaptureMessage("Getting location...");
+    
+    try {
+      // 1. Get Location
+      const position = await new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 });
+      });
+      
+      const { latitude, longitude } = position.coords;
+
+      // 2. Capture Image
+      setCaptureMessage("Analyzing frame...");
+      const imageSrc = webcamRef.current.getScreenshot();
+      
+      // 3. Send to Backend
+      const token = localStorage.getItem("token");
+      const response = await fetch("https://plasticai.onrender.com/scans/capture", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          image_base64: imageSrc,
+          latitude,
+          longitude
+        })
+      });
+
+      if (!response.ok) {
+        const errText = await response.text();
+        console.error("Backend error response:", errText);
+        throw new Error(`Failed to capture: ${response.status} ${errText}`);
+      }
+      setCaptureMessage("Analysis complete!");
+      
+      // Clear message after 3 seconds
+      setTimeout(() => setCaptureMessage(""), 3000);
+    } catch (err) {
+      console.error(err);
+      setCaptureMessage("Capture failed: " + err.message);
+      setTimeout(() => setCaptureMessage(""), 4000);
+    } finally {
+      setIsCapturing(false);
+    }
+  };
 
   const processFrame = useCallback(() => {
     if (webcamRef.current && wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
@@ -119,6 +171,22 @@ export default function WebcamScanner({ onDetections }) {
           <span className="w-2 h-2 rounded-full bg-primary" /> AI Active
         </div>
       )}
+
+      {/* Capture Button */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center">
+        {captureMessage && (
+          <div className="mb-3 px-4 py-2 bg-black/80 text-white text-sm rounded-lg backdrop-blur-md">
+            {captureMessage}
+          </div>
+        )}
+        <button
+          onClick={captureAndAnalyze}
+          disabled={isCapturing}
+          className="group relative flex items-center justify-center w-16 h-16 rounded-full bg-white/20 hover:bg-white/30 border-2 border-white/50 backdrop-blur-md transition-all disabled:opacity-50"
+        >
+          <div className="w-12 h-12 rounded-full bg-white group-hover:scale-95 transition-transform" />
+        </button>
+      </div>
     </div>
   );
 }
