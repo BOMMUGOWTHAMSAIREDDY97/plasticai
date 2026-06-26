@@ -11,7 +11,7 @@ export default function ProfilePage() {
     const fetchReports = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:8000/scans/my-reports", {
+        const res = await axios.get("https://plasticai.onrender.com/scans/my-reports", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setReports(res.data);
@@ -42,7 +42,7 @@ export default function ProfilePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reports.map(report => (
               <div key={report.id} className="bg-surface/50 rounded-xl overflow-hidden border border-glassBorder">
-                <img src={`http://localhost:8000${report.image_url}`} alt="Scan" className="w-full h-48 object-cover" />
+                <img src={`https://plasticai.onrender.com${report.image_url}`} alt="Scan" className="w-full h-48 object-cover" />
                 <div className="p-4 space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="text-xs font-semibold text-slate-400">Date</span>
@@ -54,7 +54,7 @@ export default function ProfilePage() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-xs font-semibold text-slate-400">Location</span>
-                    <span className="text-xs font-mono">{report.latitude?.toFixed(4)}, {report.longitude?.toFixed(4)}</span>
+                    <span className="text-xs font-mono">{report.location_name || `${report.latitude?.toFixed(4)}, ${report.longitude?.toFixed(4)}`}</span>
                   </div>
                 </div>
               </div>
