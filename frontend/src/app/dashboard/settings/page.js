@@ -83,6 +83,17 @@ export default function SettingsPage() {
                 <div className="w-11 h-6 bg-surface peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
               </label>
             </div>
+            
+            <div className="pt-4 border-t border-glassBorder/50">
+              <label className="text-sm font-medium text-textSecondary mb-2 block">Local Authorities Contact</label>
+              <div className="flex gap-4">
+                <input type="email" placeholder="e.g. sanitation@cityhall.gov" defaultValue="environment@localgov.in" className="flex-1 bg-surface/50 border border-glassBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" />
+                <button className="px-6 py-3 bg-danger/20 text-danger hover:bg-danger/30 rounded-xl font-medium transition-colors whitespace-nowrap">
+                  Mail Latest Report
+                </button>
+              </div>
+              <p className="text-xs text-textSecondary mt-2">Configure the official government or NGO email address to receive critical pollution alerts.</p>
+            </div>
           </div>
         </motion.div>
 
