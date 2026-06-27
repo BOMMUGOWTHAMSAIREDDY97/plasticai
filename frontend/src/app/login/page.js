@@ -23,31 +23,36 @@ export default function Login() {
       const token = await userCredential.user.getIdToken();
       localStorage.setItem("token", token);
       
-      // Sync with backend to get the user's role
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
-        email,
-        full_name: email.split("@")[0],
-        role: "operator", // Will not overwrite existing role
-        password: "FIREBASE_MANAGED"
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      localStorage.setItem("role", res.data.role);
+      // Sync with backend to get the user's role (Wrap in try/catch to fallback if backend is offline)
+      try {
+        const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
+          email,
+          full_name: email.split("@")[0],
+          role: "operator", // Will not overwrite existing role
+          password: "FIREBASE_MANAGED"
+        }, {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        localStorage.setItem("role", res.data.role);
 
-      if (res.data.role === "admin") {
-        // Prevent admins from logging in through the user portal
-        const { signOut } = await import("firebase/auth");
-        await signOut(auth);
-        localStorage.removeItem("token");
-        localStorage.removeItem("role");
-        setError("Admin accounts must use the Admin Login portal.");
-        return;
+        if (res.data.role === "admin") {
+          // Prevent admins from logging in through the user portal
+          const { signOut } = await import("firebase/auth");
+          await signOut(auth);
+          localStorage.removeItem("token");
+          localStorage.removeItem("role");
+          setError("Admin accounts must use the Admin Login portal.");
+          return;
+        }
+      } catch (backendErr) {
+        console.warn("Backend is unreachable, falling back to operator role.", backendErr);
+        localStorage.setItem("role", "operator");
       }
 
       router.push("/dashboard");
     } catch (err) {
       console.error(err);
-      setError("Invalid email or password");
+      setError(`Login failed: ${err.message || err.code || "Invalid email or password"}`);
     }
   };
 
@@ -64,31 +69,37 @@ export default function Login() {
       const userEmail = userCredential.user.email;
       const userName = userCredential.user.displayName || userEmail.split("@")[0];
       
-      // Sync with backend
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
-        email: userEmail,
-        full_name: userName,
-        role: "operator", 
-        password: "FIREBASE_MANAGED_GOOGLE"
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      localStorage.setItem("role", res.data.role);
+      // Sync with backend (Wrap in try/catch to fallback if backend is offline)
+      try {
+        const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
+          email: userEmail,
+          full_name: userName,
+          role: "operator", 
+          password: "FIREBASE_MANAGED_GOOGLE"
+        }, {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        localStorage.setItem("role", res.data.role);
 
-      if (res.data.role === "admin") {
-        // Prevent admins from logging in through the user portal via Google
-        const { signOut } = await import("firebase/auth");
-        await signOut(auth);
-        localStorage.removeItem("token");
-        localStorage.removeItem("role");
-        setError("Admin accounts must use the Admin Login portal.");
-        return;
+        if (res.data.role === "admin") {
+          // Prevent admins from logging in through the user portal via Google
+          const { signOut } = await import("firebase/auth");
+          await signOut(auth);
+          localStorage.removeItem("token");
+          localStorage.removeItem("role");
+          setError("Admin accounts must use the Admin Login portal.");
+          return;
+        }
+      } catch (backendErr) {
+        console.warn("Backend is unreachable, falling back to operator role.", backendErr);
+        // Fallback if backend is not deployed yet or offline
+        localStorage.setItem("role", "operator");
       }
 
       router.push("/dashboard");
     } catch (err) {
       console.error(err);
-      setError(`Google sign-in failed: ${err.message || err.code || "Unknown error"}. Please check the browser console for details.`);
+      setError(`Google sign-in failed: ${err.message || err.code || "Unknown error"}.`);
     }
   };
 
