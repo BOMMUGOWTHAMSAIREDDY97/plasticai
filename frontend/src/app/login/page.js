@@ -88,7 +88,7 @@ export default function Login() {
       router.push("/dashboard");
     } catch (err) {
       console.error(err);
-      setError("Google sign-in failed. Please try again.");
+      setError(`Google sign-in failed: ${err.message || err.code || "Unknown error"}. Please check the browser console for details.`);
     }
   };
 
