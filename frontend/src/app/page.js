@@ -90,43 +90,43 @@ export default function LandingPage() {
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-500/10 to-transparent pointer-events-none" />
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Measuring Our <span className="text-blue-400">Impact</span></h2>
+                <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Driving Real <span className="text-blue-400">Change</span></h2>
                 <p className="text-lg text-textSecondary mb-8 leading-relaxed">
-                  By digitizing waste management, PlasticVision AI helps municipalities intercept plastic before it reaches our oceans. Our platform enables proactive rather than reactive environmental protection.
+                  PlasticVision AI is designed to empower environmental organizations and municipalities with data-driven insights. By automating waste detection, we make it easier to intercept plastic before it harms ecosystems.
                 </p>
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center border border-blue-500/30"><Leaf className="w-6 h-6 text-blue-400" /></div>
                     <div>
-                      <h4 className="text-xl font-bold">40% Reduction</h4>
-                      <p className="text-sm text-textSecondary">in manual sorting time</p>
+                      <h4 className="text-xl font-bold">Optimize Sorting</h4>
+                      <p className="text-sm text-textSecondary">Reduce reliance on manual waste inspection</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center border border-blue-500/30"><Shield className="w-6 h-6 text-blue-400" /></div>
                     <div>
-                      <h4 className="text-xl font-bold">High Precision</h4>
-                      <p className="text-sm text-textSecondary">95%+ accuracy in plastic classification</p>
+                      <h4 className="text-xl font-bold">Advanced AI</h4>
+                      <p className="text-sm text-textSecondary">State-of-the-art computer vision models</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                  <div className="glass-card p-6 rounded-2xl text-center border border-blue-500/20">
-                    <div className="text-4xl font-bold text-blue-400 mb-2">1M+</div>
-                    <div className="text-sm text-textSecondary">Items Scanned</div>
+                    <div className="text-4xl font-bold text-blue-400 mb-2">Fast</div>
+                    <div className="text-sm text-textSecondary">Real-Time Inference</div>
                  </div>
                  <div className="glass-card p-6 rounded-2xl text-center border border-blue-500/20 mt-8">
-                    <div className="text-4xl font-bold text-blue-400 mb-2">50+</div>
-                    <div className="text-sm text-textSecondary">Cities Supported</div>
+                    <div className="text-4xl font-bold text-blue-400 mb-2">Cloud</div>
+                    <div className="text-sm text-textSecondary">Accessible Anywhere</div>
                  </div>
                  <div className="glass-card p-6 rounded-2xl text-center border border-blue-500/20">
                     <div className="text-4xl font-bold text-blue-400 mb-2">24/7</div>
                     <div className="text-sm text-textSecondary">Continuous Monitoring</div>
                  </div>
                  <div className="glass-card p-6 rounded-2xl text-center border border-blue-500/20 mt-8">
-                    <div className="text-4xl font-bold text-blue-400 mb-2">100%</div>
-                    <div className="text-sm text-textSecondary">Automated</div>
+                    <div className="text-4xl font-bold text-blue-400 mb-2">Smart</div>
+                    <div className="text-sm text-textSecondary">Automated Reporting</div>
                  </div>
               </div>
             </div>
