@@ -18,7 +18,7 @@ export default function ReportsPage() {
         throw new Error("User credentials expired. Please login again.");
       }
 
-      const response = await fetch("http://localhost:8000/api/v1/reports/generate", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/v1/reports/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -39,7 +39,7 @@ export default function AnalyticsPage() {
         const token = localStorage.getItem("token");
         if (!token) return;
         
-        const response = await fetch("https://plasticai.onrender.com/scans/my-reports", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/scans/my-reports`, {
           headers: {
             "Authorization": `Bearer ${token}`
           },

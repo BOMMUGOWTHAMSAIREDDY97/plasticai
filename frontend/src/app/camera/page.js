@@ -29,7 +29,7 @@ export default function CameraPage() {
     setErrorMsg("");
     try {
       // Connect to WebSocket first
-      const wsUrl = `wss://plasticai.onrender.com/api/v1/detections/live`;
+      const wsUrl = `ws://localhost:8000/api/v1/detections/live`;
       wsRef.current = new WebSocket(wsUrl);
 
       wsRef.current.onopen = () => {

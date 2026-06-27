@@ -24,7 +24,7 @@ export default function Login() {
       localStorage.setItem("token", token);
       
       // Sync with backend to get the user's role
-      const res = await axios.post("http://localhost:8000/auth/sync-user", {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
         email,
         full_name: email.split("@")[0],
         role: "operator", // Will not overwrite existing role
@@ -33,6 +33,16 @@ export default function Login() {
         headers: { Authorization: `Bearer ${token}` }
       });
       localStorage.setItem("role", res.data.role);
+
+      if (res.data.role === "admin") {
+        // Prevent admins from logging in through the user portal
+        const { signOut } = await import("firebase/auth");
+        await signOut(auth);
+        localStorage.removeItem("token");
+        localStorage.removeItem("role");
+        setError("Admin accounts must use the Admin Login portal.");
+        return;
+      }
 
       router.push("/dashboard");
     } catch (err) {
@@ -55,7 +65,7 @@ export default function Login() {
       const userName = userCredential.user.displayName || userEmail.split("@")[0];
       
       // Sync with backend
-      const res = await axios.post("https://plasticai.onrender.com/auth/sync-user", {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
         email: userEmail,
         full_name: userName,
         role: "operator", 
@@ -64,6 +74,16 @@ export default function Login() {
         headers: { Authorization: `Bearer ${token}` }
       });
       localStorage.setItem("role", res.data.role);
+
+      if (res.data.role === "admin") {
+        // Prevent admins from logging in through the user portal via Google
+        const { signOut } = await import("firebase/auth");
+        await signOut(auth);
+        localStorage.removeItem("token");
+        localStorage.removeItem("role");
+        setError("Admin accounts must use the Admin Login portal.");
+        return;
+      }
 
       router.push("/dashboard");
     } catch (err) {

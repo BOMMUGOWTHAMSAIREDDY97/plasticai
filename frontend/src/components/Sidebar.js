@@ -22,7 +22,7 @@ export default function Sidebar() {
     localStorage.removeItem("role");
     
     try {
-      const { auth } = await import("../../firebaseConfig");
+      const { auth } = await import("../firebaseConfig");
       const { signOut } = await import("firebase/auth");
       await signOut(auth);
     } catch (error) {

@@ -37,7 +37,7 @@ export default function Dashboard() {
         const token = localStorage.getItem("token");
         if (!token) return;
         
-        const response = await fetch("https://plasticai.onrender.com/scans/my-reports", {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/scans/my-reports`, {
           headers: {
             "Authorization": `Bearer ${token}`
           },
@@ -174,7 +174,7 @@ export default function Dashboard() {
                 <div key={report.id} className="p-4 rounded-xl bg-surface/80 border border-glassBorder flex gap-4">
                   <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surfaceHighlight border border-glassBorder/50">
                     <img 
-                      src={`https://plasticai.onrender.com${report.image_url}`} 
+                      src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}${report.image_url}`} 
                       alt="Area Scan" 
                       className="w-full h-full object-cover"
                       onError={(e) => { e.target.style.display = 'none'; }}

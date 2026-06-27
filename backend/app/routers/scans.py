@@ -3,6 +3,9 @@ import base64
 import time
 import urllib.request
 import json
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
@@ -21,6 +24,43 @@ def get_db():
 # Directory to save scan images locally
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+# Email Configuration
+# WARNING: It's best to put these in your environment variables (.env)
+SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
+SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
+SENDER_EMAIL = os.getenv("SENDER_EMAIL", "your_email@gmail.com")
+SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "your_app_password")
+ADMIN_EMAIL = os.getenv("ADMIN_EMAIL", "admin_email@gmail.com")
+
+def send_admin_email(report: models.ScanReport):
+    """Sends an email notification to the admin with the new scan data."""
+    try:
+        msg = MIMEMultipart()
+        msg['From'] = SENDER_EMAIL
+        msg['To'] = ADMIN_EMAIL
+        msg['Subject'] = f"New Plastic Scan Report: {report.location_name}"
+
+        body = f"""
+        A new scan report has been submitted!
+        
+        Details:
+        - User ID: {report.user_id}
+        - Location: {report.location_name} (Lat: {report.latitude}, Lon: {report.longitude})
+        - Plastic Percentage: {report.plastic_percentage}%
+        - Image URL: {report.image_url}
+        """
+        msg.attach(MIMEText(body, 'plain'))
+
+        # Connect to the SMTP server and send
+        server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        server.starttls() # Secure the connection
+        server.login(SENDER_EMAIL, SENDER_PASSWORD)
+        server.send_message(msg)
+        server.quit()
+        print("Admin notification email sent successfully!")
+    except Exception as e:
+        print(f"Failed to send email: {e}")
 
 def reverse_geocode(lat, lon):
     if not lat or not lon:
@@ -91,6 +131,12 @@ def capture_scan(
         db.add(new_report)
         db.commit()
         db.refresh(new_report)
+
+        # 5. Send email to admin
+        # Using a background thread to prevent blocking the API response
+        import threading
+        email_thread = threading.Thread(target=send_admin_email, args=(new_report,))
+        email_thread.start()
 
         return new_report
     except Exception as e:

@@ -26,7 +26,7 @@ export default function ProfilePage() {
           return;
         }
         
-        const res = await fetch("https://plasticai.onrender.com/scans/my-reports", {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/scans/my-reports`, {
           headers: { Authorization: `Bearer ${token}` },
           cache: "no-store"
         });
@@ -76,7 +76,7 @@ export default function ProfilePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reports.map(report => (
               <div key={report.id} className="bg-surface/50 rounded-xl overflow-hidden border border-glassBorder">
-                <img src={`https://plasticai.onrender.com${report.image_url}`} alt="Scan" className="w-full h-48 object-cover" />
+                <img src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}${report.image_url}`} alt="Scan" className="w-full h-48 object-cover" />
                 <div className="p-4 space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="text-xs font-semibold text-slate-400">Date</span>

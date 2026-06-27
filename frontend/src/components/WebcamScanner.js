@@ -19,7 +19,11 @@ export default function WebcamScanner({ onDetections }) {
     try {
       // 1. Get Location
       const position = await new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 });
+        navigator.geolocation.getCurrentPosition(resolve, reject, { 
+          timeout: 15000,
+          enableHighAccuracy: true,
+          maximumAge: 0
+        });
       });
       
       const { latitude, longitude } = position.coords;
@@ -30,7 +34,7 @@ export default function WebcamScanner({ onDetections }) {
       
       // 3. Send to Backend
       const token = localStorage.getItem("token");
-      const response = await fetch("https://plasticai.onrender.com/scans/capture", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/scans/capture`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -73,7 +77,7 @@ export default function WebcamScanner({ onDetections }) {
   useEffect(() => {
     // Connect to WebSocket
     const connectWs = () => {
-      const ws = new WebSocket("wss://plasticai.onrender.com/ws/video");
+      const ws = new WebSocket("ws://localhost:8000/ws/video");
       
       ws.onopen = () => {
         console.log("Connected to Vision Service");

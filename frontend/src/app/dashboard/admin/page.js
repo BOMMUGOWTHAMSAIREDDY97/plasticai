@@ -18,12 +18,12 @@ export default function AdminPage() {
       try {
         const token = localStorage.getItem("token");
         if (activeTab === "scans") {
-          const res = await axios.get("http://localhost:8000/scans/admin-reports", {
+          const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/scans/admin-reports`, {
             headers: { Authorization: `Bearer ${token}` }
           });
           setReports(res.data);
         } else {
-          const res = await axios.get("http://localhost:8000/auth/users", {
+          const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/users`, {
             headers: { Authorization: `Bearer ${token}` }
           });
           setUsers(res.data);
@@ -42,7 +42,7 @@ export default function AdminPage() {
   const handleRoleChange = async (userId, newRole) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.put(`http://localhost:8000/auth/users/${userId}/role`, {
+      await axios.put(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/users/${userId}/role`, {
         role: newRole
       }, {
         headers: { Authorization: `Bearer ${token}` }
@@ -120,7 +120,7 @@ export default function AdminPage() {
                         </span>
                       </td>
                       <td className="p-4">
-                        <a href={`http://localhost:8000${report.image_url}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">View Photo</a>
+                        <a href={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}${report.image_url}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">View Photo</a>
                       </td>
                     </tr>
                   ))
