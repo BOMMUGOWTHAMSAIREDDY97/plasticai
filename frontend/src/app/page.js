@@ -19,13 +19,7 @@ export default function LandingPage() {
           <Leaf className="w-8 h-8 text-primary" />
           <span className="text-2xl font-bold tracking-tight">PlasticVision <span className="text-primary">AI</span></span>
         </div>
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-textSecondary">
-          <Link href="#features" className="hover:text-primary transition-colors">Features</Link>
-          <Link href="#impact" className="hover:text-primary transition-colors">Impact</Link>
-          <Link href="#technology" className="hover:text-primary transition-colors">Technology</Link>
-        </div>
-        <div className="flex items-center gap-4">
-        </div>
+
       </nav>
 
       {/* Hero Section */}
