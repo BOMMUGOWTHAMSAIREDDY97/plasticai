@@ -61,9 +61,6 @@ export default function LandingPage() {
             <Link href="/register" className="w-full sm:w-auto px-8 py-4 rounded-full bg-primary hover:bg-primaryHover text-white font-semibold flex items-center justify-center gap-2 transition-all glow-btn-purple">
               Launch Dashboard <ArrowRight className="w-5 h-5" />
             </Link>
-            <Link href="#demo" className="w-full sm:w-auto px-8 py-4 rounded-full glass-panel hover:bg-white/5 font-semibold flex items-center justify-center gap-2 transition-all">
-              Watch Demo
-            </Link>
           </div>
         </motion.div>
 
