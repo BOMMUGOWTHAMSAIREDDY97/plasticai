@@ -3,30 +3,34 @@ import os
 import cv2
 import numpy as np
 
-# Load MobileNet SSD Model
-MODEL_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'models')
-PROTOTXT = os.path.join(MODEL_DIR, 'MobileNetSSD_deploy.prototxt')
-MODEL = os.path.join(MODEL_DIR, 'MobileNetSSD_deploy.caffemodel')
+# Try importing ultralytics (will fail gracefully if not installed yet)
+try:
+    from ultralytics import YOLO
+    
+    # Initialize YOLOv8 model (downloads yolov8n.pt if not present)
+    model = YOLO('yolov8n.pt')
+except ImportError:
+    model = None
+    print("WARNING: ultralytics is not installed. YOLOv8 will not work.")
 
-net = None
-if os.path.exists(PROTOTXT) and os.path.exists(MODEL):
-    try:
-        net = cv2.dnn.readNetFromCaffe(PROTOTXT, MODEL)
-    except Exception as e:
-        print(f"Failed to load DNN model: {e}")
-
-CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
-           "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
-           "dog", "horse", "motorbike", "person", "pottedplant", "sheep",
-           "sofa", "train", "tvmonitor"]
+# We map relevant COCO classes to a generic "Plastic Item" or specific name
+# COCO indices: 39 (bottle), 41 (cup), 42 (fork), 43 (knife), 44 (spoon), 45 (bowl)
+PLASTIC_CLASSES = {
+    39: "Plastic Bottle",
+    41: "Plastic Cup",
+    42: "Plastic Fork",
+    43: "Plastic Knife",
+    44: "Plastic Spoon",
+    45: "Plastic Bowl"
+}
 
 def process_frame(frame_data_b64: str):
     """
-    Real-time AI object detection using OpenCV DNN + MobileNet SSD.
-    Takes nearly 0 RAM and is highly optimized.
+    Real-time AI object detection using YOLOv8.
     """
-    global net
-    
+    if model is None:
+        return []
+        
     try:
         if ',' in frame_data_b64:
             frame_data_b64 = frame_data_b64.split(',')[1]
@@ -35,38 +39,34 @@ def process_frame(frame_data_b64: str):
         np_arr = np.frombuffer(img_bytes, np.uint8)
         frame = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
         
-        if frame is None or net is None:
+        if frame is None:
             return []
             
-        (h, w) = frame.shape[:2]
-        blob = cv2.dnn.blobFromImage(cv2.resize(frame, (300, 300)), 0.007843, (300, 300), 127.5)
-        
-        net.setInput(blob)
-        detections = net.forward()
+        # Run YOLOv8 inference
+        results = model(frame, stream=True, verbose=False)
         
         detected_objects = []
         
-        for i in np.arange(0, detections.shape[2]):
-            confidence = detections[0, 0, i, 2]
-            
-            if confidence > 0.4:
-                idx = int(detections[0, 0, i, 1])
-                class_name = CLASSES[idx]
+        for r in results:
+            boxes = r.boxes
+            for box in boxes:
+                cls_id = int(box.cls[0])
+                confidence = float(box.conf[0])
                 
-                # We specifically look for "bottle" to identify plastic
-                if class_name == "bottle":
-                    box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-                    (startX, startY, endX, endY) = box.astype("int")
+                # Check if it's one of our plastic target classes and > 40% confidence
+                if cls_id in PLASTIC_CLASSES and confidence > 0.4:
+                    # Get bounding box coordinates (x1, y1, x2, y2)
+                    x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
                     
                     detected_objects.append({
-                        "class_id": 5, # Bottle index
-                        "class_name": "PET Bottle",
-                        "confidence": float(confidence),
-                        "box": [int(startX), int(startY), int(endX), int(endY)]
+                        "class_id": cls_id,
+                        "class_name": PLASTIC_CLASSES[cls_id],
+                        "confidence": confidence,
+                        "box": [int(x1), int(y1), int(x2), int(y2)]
                     })
                     
         return detected_objects
         
     except Exception as e:
-        print(f"Error in DNN detection: {e}")
+        print(f"Error in YOLOv8 detection: {e}")
         return []

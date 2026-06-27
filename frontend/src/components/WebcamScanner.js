@@ -34,7 +34,7 @@ export default function WebcamScanner({ onDetections }) {
       
       // 3. Send to Backend
       const token = localStorage.getItem("token");
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/scans/capture`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000'}/scans/capture`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,11 @@ export default function WebcamScanner({ onDetections }) {
   useEffect(() => {
     // Connect to WebSocket
     const connectWs = () => {
-      const ws = new WebSocket("ws://localhost:8000/ws/video");
+      const wsUrl = process.env.NEXT_PUBLIC_API_URL 
+        ? process.env.NEXT_PUBLIC_API_URL.replace("http", "ws") + "/ws/video"
+        : "ws://127.0.0.1:8000/ws/video";
+        
+      const ws = new WebSocket(wsUrl);
       
       ws.onopen = () => {
         console.log("Connected to Vision Service");
@@ -157,7 +161,12 @@ export default function WebcamScanner({ onDetections }) {
         ref={webcamRef}
         audio={false}
         screenshotFormat="image/jpeg"
-        videoConstraints={{ facingMode: "environment" }}
+        screenshotQuality={0.7}
+        videoConstraints={{ 
+          facingMode: "environment",
+          width: 640,
+          height: 480
+        }}
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
       <canvas
