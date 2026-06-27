@@ -25,17 +25,21 @@ export default function Register() {
       // 2. Get Firebase token
       const token = await userCredential.user.getIdToken();
       
-      // 3. Sync user with local Postgres/SQLite backend
-      await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
-        email,
-        full_name: name,
-        role: "operator",
-        password: "FIREBASE_MANAGED"
-      }, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
+      // 3. Sync with backend (Wrap in try/catch to bypass if offline)
+      try {
+        await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
+          email,
+          full_name: name,
+          role: "operator",
+          password: "FIREBASE_MANAGED"
+        }, {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
+      } catch (backendErr) {
+        console.warn("Backend is unreachable, continuing with registration anyway.", backendErr);
+      }
       
       // 4. Save role to localStorage
       localStorage.setItem("role", "operator");
@@ -43,7 +47,7 @@ export default function Register() {
       router.push("/dashboard");
     } catch (err) {
       console.error(err);
-      setError(err.message || "Registration failed");
+      setError(`Registration failed: ${err.message || err.code || "Unknown error"}`);
     }
   };
 
@@ -60,21 +64,26 @@ export default function Register() {
       const userEmail = userCredential.user.email;
       const userName = userCredential.user.displayName || userEmail.split("@")[0];
       
-      // Sync with backend
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
-        email: userEmail,
-        full_name: userName,
-        role: "operator", 
-        password: "FIREBASE_MANAGED_GOOGLE"
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      localStorage.setItem("role", res.data.role);
+      // Sync with backend (Wrap in try/catch to bypass if offline)
+      try {
+        const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/sync-user`, {
+          email: userEmail,
+          full_name: userName,
+          role: "operator", 
+          password: "FIREBASE_MANAGED_GOOGLE"
+        }, {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        localStorage.setItem("role", res.data.role);
+      } catch (backendErr) {
+        console.warn("Backend is unreachable, falling back to operator role.", backendErr);
+        localStorage.setItem("role", "operator");
+      }
 
       router.push("/dashboard");
     } catch (err) {
       console.error(err);
-      setError("Google sign-in failed. Please try again.");
+      setError(`Google sign-in failed: ${err.message || err.code || "Unknown error"}.`);
     }
   };
 
