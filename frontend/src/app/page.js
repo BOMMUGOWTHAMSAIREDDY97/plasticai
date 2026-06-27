@@ -25,10 +25,6 @@ export default function LandingPage() {
           <Link href="#technology" className="hover:text-primary transition-colors">Technology</Link>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="/login" className="text-sm font-medium hover:text-white transition-colors">Login</Link>
-          <Link href="/register" className="px-5 py-2.5 rounded-full bg-primary hover:bg-primaryHover text-white text-sm font-semibold transition-all glow-btn-purple">
-            Get Started
-          </Link>
         </div>
       </nav>
 
