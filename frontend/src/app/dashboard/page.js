@@ -246,56 +246,12 @@ export default function Dashboard() {
 
   const [filters, setFilters] = useState({
     range: "daily",
-    district: "",
     state: "",
-    category: "",
-    constituency: ""
+    category: ""
   });
 
   const [loading, setLoading] = useState(true);
   const [seeding, setSeeding] = useState(false);
-
-  const getAvailableDistricts = () => {
-    if (filters.state) {
-      return stateData[filters.state] ? stateData[filters.state].districts : [];
-    }
-    return ["Hyderabad", "Secunderabad", "Rangareddy", "Mumbai City", "Pune District", "Bengaluru Urban", "Chennai District"];
-  };
-
-  const getAvailableConstituencies = () => {
-    const district = filters.district;
-    if (!district) return [];
-    
-    const name = district.replace(/\s+(District|Central|North|South|East|West|Urban|Rural|City|Metropolitan|NCT|UT)/gi, "").trim();
-    const state = filters.state;
-    if (!state || !stateConstituencies[state]) {
-      return [
-        name,
-        `${name} Rural`,
-        `${name} North`,
-        `${name} South`
-      ];
-    }
-    
-    const stateCons = stateConstituencies[state] || [];
-    
-    // Filter constituencies matching district name substrings (case-insensitive)
-    const matched = stateCons.filter(c => 
-      c.toLowerCase().includes(name.toLowerCase()) || 
-      name.toLowerCase().includes(c.toLowerCase())
-    );
-    
-    if (matched.length > 0) {
-      return matched;
-    }
-    
-    return [
-      name,
-      `${name} Rural`,
-      `${name} North`,
-      `${name} South`
-    ];
-  };
 
 
 
@@ -446,37 +402,12 @@ export default function Dashboard() {
         {/* State */}
         <select 
           value={filters.state}
-          onChange={(e) => setFilters({...filters, state: e.target.value, district: "", constituency: ""})}
+          onChange={(e) => setFilters({...filters, state: e.target.value})}
           className="bg-background border border-glassBorder rounded-xl px-3 py-1.5 text-sm text-textPrimary focus:outline-none focus:border-primary transition-colors"
         >
           <option value="">All States</option>
           {indianStatesAndUTs.map(s => (
             <option key={s} value={s}>{s}</option>
-          ))}
-        </select>
-
-        {/* District */}
-        <select 
-          value={filters.district}
-          onChange={(e) => setFilters({...filters, district: e.target.value, constituency: ""})}
-          className="bg-background border border-glassBorder rounded-xl px-3 py-1.5 text-sm text-textPrimary focus:outline-none focus:border-primary transition-colors"
-        >
-          <option value="">All Districts</option>
-          {getAvailableDistricts().map(d => (
-            <option key={d} value={d}>{d}</option>
-          ))}
-        </select>
-
-        {/* Constituency */}
-        <select 
-          value={filters.constituency}
-          onChange={(e) => setFilters({...filters, constituency: e.target.value})}
-          className="bg-background border border-glassBorder rounded-xl px-3 py-1.5 text-sm text-textPrimary focus:outline-none focus:border-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          disabled={!filters.district}
-        >
-          <option value="">All Constituencies</option>
-          {getAvailableConstituencies().map(c => (
-            <option key={c} value={c}>{c}</option>
           ))}
         </select>
 
