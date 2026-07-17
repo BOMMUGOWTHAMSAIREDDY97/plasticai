@@ -83,6 +83,9 @@ export default function Register() {
       router.push("/dashboard");
     } catch (err) {
       console.error(err);
+      if (err.code === "auth/cancelled-popup-request" || err.code === "auth/popup-closed-by-user") {
+        return;
+      }
       setError(`Google sign-in failed: ${err.message || err.code || "Unknown error"}.`);
     }
   };

@@ -99,22 +99,21 @@ def capture_scan(
         header, encoded = report_in.image_base64.split(",", 1)
         image_data = base64.b64decode(encoded)
         
-        # 2. Save image locally
+        from ..services.inference import process_frame
+        
+        # 2. Analyze image using real OpenCV DNN Model / Tracker
+        detections, annotated_bytes = process_frame(image_data)
+        
+        # 3. Save annotated image locally
         filename = f"{current_user.id}_{int(time.time())}.jpg"
         filepath = os.path.join(UPLOAD_DIR, filename)
         with open(filepath, "wb") as f:
-            f.write(image_data)
-            
-        from ..services import vision
-        
-        # 3. Analyze image & Geocode using real OpenCV DNN Model
-        detections = vision.process_frame(report_in.image_base64)
+            f.write(annotated_bytes)
         
         # Calculate garbage density based on actual objects detected
-        # e.g., 20% density per detected bottle, starting at a base of 5%
+        # e.g., 25% density per detected bottle/object, starting at a base of 5%
         bottle_count = len(detections)
         actual_percentage = min(99.0, (bottle_count * 25.0) + 5.0) 
-
         
         location_name = reverse_geocode(report_in.latitude, report_in.longitude)
 

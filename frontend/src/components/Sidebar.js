@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { LayoutDashboard, Camera, BarChart2, FileText, Settings, LogOut, Leaf } from "lucide-react";
+import { LayoutDashboard, FileText, Settings, LogOut, Leaf, GitBranch, ShieldAlert, Sparkles, Map, RefreshCw } from "lucide-react";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -34,11 +34,13 @@ export default function Sidebar() {
 
   const links = [
     { name: "Overview", href: "/dashboard", icon: LayoutDashboard },
-    { name: "Live Camera", href: "/dashboard/camera", icon: Camera },
-    { name: "Analytics", href: "/dashboard/analytics", icon: BarChart2 },
+    { name: "Waste Flow", href: "/dashboard/flow", icon: GitBranch },
+    { name: "Recycling Analytics", href: "/dashboard/recycling", icon: RefreshCw },
+    { name: "Map Dashboard", href: "/dashboard/map", icon: Map },
+    { name: "AI Insights", href: "/dashboard/insights", icon: Sparkles },
     { name: "Reports", href: "/dashboard/reports", icon: FileText },
-    { name: "My Profile", href: "/dashboard/profile", icon: Leaf },
-    ...(role === "admin" ? [{ name: "Admin Panel", href: "/dashboard/admin", icon: LayoutDashboard }] : []),
+    { name: "Administration", href: "/dashboard/admin", icon: ShieldAlert },
+    { name: "Settings", href: "/dashboard/settings", icon: Settings },
   ];
 
   return (

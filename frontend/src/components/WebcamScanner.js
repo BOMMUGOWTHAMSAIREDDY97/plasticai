@@ -117,7 +117,7 @@ export default function WebcamScanner({ onDetections }) {
         wsRef.current.close();
       }
     };
-  }, [processFrame, onDetections]);
+  }, [processFrame]); // Removed onDetections to prevent reconnect loops
 
   const drawDetections = (detections) => {
     if (!canvasRef.current || !webcamRef.current || !webcamRef.current.video) return;

@@ -7,25 +7,38 @@ export default function Navbar() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
+    let isMounted = true;
+    let unsubscribe = null;
+
     // Dynamically import Firebase to avoid server-side rendering issues
     import("../firebaseConfig").then(({ auth }) => {
       import("firebase/auth").then(({ onAuthStateChanged }) => {
-        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+        if (!isMounted) return;
+        unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+          if (!isMounted) return;
           if (currentUser) {
             setUser({
               name: currentUser.displayName || currentUser.email.split("@")[0],
               email: currentUser.email,
               photoURL: currentUser.photoURL
             });
+          } else {
+            setUser(null);
           }
         });
-        return () => unsubscribe();
       });
     });
+
+    return () => {
+      isMounted = false;
+      if (unsubscribe) {
+        unsubscribe();
+      }
+    };
   }, []);
 
   return (
-    <header className="h-20 border-b border-glassBorder bg-surface/50 backdrop-blur-xl flex items-center justify-between px-8 sticky top-0 z-10">
+    <header className="h-20 border-b border-glassBorder bg-surface/80 backdrop-blur-xl flex items-center justify-between px-8 sticky top-0 z-50">
       <div className="flex-1 max-w-xl">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-textSecondary" />
