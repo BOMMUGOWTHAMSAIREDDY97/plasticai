@@ -1,6 +1,9 @@
 # Runs backend (uvicorn) and frontend (npm dev) concurrently in separate terminals
-$backendCmd = ".\backend\venv\Scripts\python.exe -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload"
-$frontendCmd = "cd frontend; npm run dev"
+$baseDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+if (-not $baseDir) { $baseDir = (Get-Location).Path }
+
+$backendCmd = "Set-Location -Path '$baseDir'; .\backend\venv\Scripts\python.exe -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload"
+$frontendCmd = "Set-Location -Path '$baseDir\frontend'; npm run dev"
 
 # Start backend in a new PowerShell window
 Start-Process powershell -ArgumentList "-NoExit","-Command","$backendCmd"

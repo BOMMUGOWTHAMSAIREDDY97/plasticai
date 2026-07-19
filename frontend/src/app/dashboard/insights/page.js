@@ -7,6 +7,7 @@ import { Sparkles, BrainCircuit, Lightbulb, TrendingUp, AlertTriangle, CheckCirc
 export default function AIInsights() {
   const [insights, setInsights] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedInsight, setSelectedInsight] = useState(null);
 
   useEffect(() => {
     const fetchInsights = async () => {
@@ -86,13 +87,48 @@ export default function AIInsights() {
                 
                 <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs">
                   <span className="text-textSecondary font-medium">Confidence Score: <strong className="text-white">94%</strong></span>
-                  <button className="text-primary hover:text-primaryHover font-bold flex items-center gap-1 transition-colors">
+                  <button onClick={() => setSelectedInsight(insight)} className="text-primary hover:text-primaryHover font-bold flex items-center gap-1 transition-colors">
                     Draft Policy Directives <ArrowRight className="w-3.5 h-3.5" />
                   </button>
                 </div>
               </motion.div>
             );
           })}
+        </div>
+      )}
+
+      {selectedInsight && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-background border border-white/10 rounded-2xl p-6 max-w-lg w-full shadow-xl relative"
+          >
+            <h3 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
+              <Lightbulb className="w-5 h-5 text-primary" />
+              Policy Directives for: {selectedInsight.title}
+            </h3>
+            <div className="space-y-4 mb-6">
+              <p className="text-textSecondary text-sm">Based on the recent analysis, the following policy directives have been auto-generated as suggestions:</p>
+              <ul className="list-disc pl-5 text-sm text-white/90 space-y-2">
+                {selectedInsight.policy_directives && selectedInsight.policy_directives.length > 0 ? (
+                  selectedInsight.policy_directives.map((directive, idx) => (
+                    <li key={idx}>{directive}</li>
+                  ))
+                ) : (
+                  <li>No specific directives available for this insight.</li>
+                )}
+              </ul>
+            </div>
+            <div className="flex justify-end">
+              <button 
+                onClick={() => setSelectedInsight(null)}
+                className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition-colors"
+              >
+                Close
+              </button>
+            </div>
+          </motion.div>
         </div>
       )}
     </div>

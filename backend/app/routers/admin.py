@@ -98,6 +98,13 @@ def seed_database(db: Session = Depends(database.get_db), current_user: models.U
     # 2. Create 1 Recycling Plant for each State/UT
     for state, details in state_centers.items():
         district, city, lat, lon = details
+        
+        # Smart offset to keep coastal cities inland
+        # If longitude > 78 (East coast), shift West (-0.08)
+        # If longitude <= 78 (West coast), shift East (+0.08)
+        lat_offset = 0.05
+        lon_offset = -0.08 if lon > 78 else 0.08
+        
         p_info = {
             "name": f"{city} Green Polymers Recycling Plant",
             "district": district,
@@ -106,8 +113,8 @@ def seed_database(db: Session = Depends(database.get_db), current_user: models.U
             "capacity_kg": 20000.0,
             "current_load_kg": round(random.uniform(5000.0, 15000.0), 1),
             "efficiency_rate": round(random.uniform(0.85, 0.95), 2),
-            "latitude": lat + 0.05, # Offset slightly
-            "longitude": lon + 0.05
+            "latitude": lat + lat_offset,
+            "longitude": lon + lon_offset
         }
         plant = models.RecyclingPlant(**p_info)
         db.add(plant)

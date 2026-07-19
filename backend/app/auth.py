@@ -31,9 +31,10 @@ def verify_firebase_token(credentials: HTTPAuthorizationCredentials = Depends(se
         decoded_token = firebase_auth.verify_id_token(token)
         return decoded_token
     except Exception as e:
+        print("Firebase token verification failed:", e)
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid authentication credentials",
+            detail=f"Invalid authentication credentials: {str(e)}",
             headers={"WWW-Authenticate": "Bearer"},
         )
 

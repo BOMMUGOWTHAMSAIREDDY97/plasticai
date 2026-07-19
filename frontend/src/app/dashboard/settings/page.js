@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Settings, Save, Bell, ShieldCheck, SunMoon, RefreshCw } from "lucide-react";
 
@@ -8,12 +8,43 @@ export default function SettingsPage() {
   const [refreshInterval, setRefreshInterval] = useState("30");
   const [purityThreshold, setPurityThreshold] = useState("90");
   const [recyclingGoal, setRecyclingGoal] = useState("65");
+  const [theme, setTheme] = useState("dark");
   
   const [notifications, setNotifications] = useState({
     purityDrops: true,
     capacityExceeded: true,
     weeklyDigest: false
   });
+
+  useEffect(() => {
+    // Check initial theme from document class or localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+      if (savedTheme === "light") {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
+      } else {
+        document.documentElement.classList.remove("light");
+        document.documentElement.classList.add("dark");
+      }
+    } else {
+      setTheme(document.documentElement.classList.contains("light") ? "light" : "dark");
+    }
+  }, []);
+
+  const handleThemeChange = (e) => {
+    const newTheme = e.target.value;
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    if (newTheme === "light") {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
+    } else {
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
+    }
+  };
 
   const handleSave = (e) => {
     e.preventDefault();
@@ -56,7 +87,11 @@ export default function SettingsPage() {
 
               <div>
                 <label className="text-xs text-textSecondary font-semibold block mb-2">Display Mode Theme</label>
-                <select className="w-full bg-background border border-glassBorder rounded-xl px-4 py-2.5 text-sm text-textPrimary focus:outline-none focus:border-primary transition-colors">
+                <select 
+                  value={theme}
+                  onChange={handleThemeChange}
+                  className="w-full bg-background border border-glassBorder rounded-xl px-4 py-2.5 text-sm text-textPrimary focus:outline-none focus:border-primary transition-colors"
+                >
                   <option value="dark">Dark Mode (Optimized)</option>
                   <option value="light">Light Mode</option>
                 </select>

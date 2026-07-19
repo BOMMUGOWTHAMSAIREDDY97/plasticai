@@ -1,0 +1,3640 @@
+[
+  {
+    "type": "node",
+    "id": 604185916,
+    "lat": 13.0354299,
+    "lon": 80.2507421,
+    "tags": {
+      "amenity": "recycling",
+      "location": "overground",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 669245460,
+    "lat": 12.9476788,
+    "lon": 77.6244575,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Ravi Chandra's Shop"
+    }
+  },
+  {
+    "type": "node",
+    "id": 671960254,
+    "lat": 12.952612,
+    "lon": 77.6145588,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Nazeer Aahamad"
+    }
+  },
+  {
+    "type": "node",
+    "id": 671960262,
+    "lat": 12.9528804,
+    "lon": 77.6152377,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Chinni Raju"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011674,
+    "lat": 12.9515185,
+    "lon": 77.6142644,
+    "tags": {
+      "amenity": "recycling",
+      "description": "dumpsite"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011678,
+    "lat": 12.9517365,
+    "lon": 77.6139065,
+    "tags": {
+      "amenity": "recycling",
+      "description": "dumpsite"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011694,
+    "lat": 12.9511406,
+    "lon": 77.6174732,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Kumar"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011697,
+    "lat": 12.95132,
+    "lon": 77.6171638,
+    "tags": {
+      "amenity": "recycling",
+      "description": "dumpsite"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011699,
+    "lat": 12.9518495,
+    "lon": 77.6179311,
+    "tags": {
+      "amenity": "recycling",
+      "description": "dumpsite"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011700,
+    "lat": 12.9527732,
+    "lon": 77.6173961,
+    "tags": {
+      "amenity": "recycling",
+      "description": "dumpsite"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011704,
+    "lat": 12.9530481,
+    "lon": 77.6159168,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Sapha"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011707,
+    "lat": 12.9537341,
+    "lon": 77.6168951,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Palani"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672011711,
+    "lat": 12.9529841,
+    "lon": 77.6175394,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Muniswamy"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672055796,
+    "lat": 12.9495725,
+    "lon": 77.6176442,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Baba shop"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672055799,
+    "lat": 12.9519474,
+    "lon": 77.6196686,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Vinayakai"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672055806,
+    "lat": 12.9492855,
+    "lon": 77.617491,
+    "tags": {
+      "amenity": "recycling",
+      "name": "sagai"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672060567,
+    "lat": 12.9490485,
+    "lon": 77.6174494,
+    "tags": {
+      "amenity": "recycling",
+      "name": "dumping site"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672071448,
+    "lat": 12.94905,
+    "lon": 77.617456,
+    "tags": {
+      "amenity": "recycling",
+      "description": "dumpsite"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672579813,
+    "lat": 12.941691,
+    "lon": 77.6190666,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Sakappan"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672579825,
+    "lat": 12.9433716,
+    "lon": 77.6180879,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Elumalai"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672579826,
+    "lat": 12.9419692,
+    "lon": 77.6193404,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Mukesh"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672579834,
+    "lat": 12.9430309,
+    "lon": 77.6193113,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Gajendra",
+      "name:kn": "\u0c97\u0c9c\u0cc7\u0c82\u0ca6\u0ccd\u0cb0"
+    }
+  },
+  {
+    "type": "node",
+    "id": 672579841,
+    "lat": 12.9433546,
+    "lon": 77.6187346,
+    "tags": {
+      "amenity": "recycling",
+      "description": "dumpsite"
+    }
+  },
+  {
+    "type": "node",
+    "id": 1498574276,
+    "lat": 12.206896,
+    "lon": 78.054756,
+    "tags": {
+      "amenity": "recycling",
+      "name": "M. Srinivasan",
+      "recycling:aluminium": "yes",
+      "recycling:batteries": "yes",
+      "recycling:beverage_cartons": "yes",
+      "recycling:books": "yes",
+      "recycling:cooking_oil": "yes",
+      "recycling:music": "yes",
+      "recycling:newspaper": "yes",
+      "recycling:paper": "yes",
+      "recycling:plasterboard": "yes",
+      "recycling:plastic": "yes",
+      "recycling:shoes": "yes",
+      "recycling:wood": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 1611575656,
+    "lat": 13.4163918,
+    "lon": 75.2504965,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Biomass Gasifier Plant",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 1826690209,
+    "lat": 28.718103,
+    "lon": 77.0872168,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 1907931957,
+    "lat": 13.9135002,
+    "lon": 75.5646503,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Shimoga Water Supply Board"
+    }
+  },
+  {
+    "type": "node",
+    "id": 1955943165,
+    "lat": 13.0369167,
+    "lon": 80.2163431,
+    "tags": {
+      "amenity": "recycling",
+      "building": "garage",
+      "ele": "0",
+      "name": "Paper Plastic Metal Recycler",
+      "opening_hours": "Mo-Sa 08:00-18:00",
+      "recycling:batteries": "yes",
+      "recycling:books": "yes",
+      "recycling:cardboard": "yes",
+      "recycling:electrical_appliances": "yes",
+      "recycling:glass": "yes",
+      "recycling:glass_bottles": "yes",
+      "recycling:magazines": "yes",
+      "recycling:newspaper": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2388205776,
+    "lat": 9.0891863,
+    "lon": 76.4877215,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:batteries": "yes",
+      "recycling:books": "yes",
+      "recycling:cans": "yes",
+      "recycling:cardboard": "yes",
+      "recycling:cartons": "yes",
+      "recycling:clothes": "yes",
+      "recycling:electrical_appliances": "yes",
+      "recycling:glass": "yes",
+      "recycling:glass_bottles": "yes",
+      "recycling:green_waste": "yes",
+      "recycling:magazines": "yes",
+      "recycling:newspaper": "yes",
+      "recycling:paper": "yes",
+      "recycling:paper_packaging": "yes",
+      "recycling:plastic": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling:scrap_metal": "yes",
+      "recycling:small_appliances": "yes",
+      "recycling:waste": "yes",
+      "recycling:wood": "yes",
+      "recycling_type": "container",
+      "wheelchair": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2788733297,
+    "lat": 32.1895559,
+    "lon": 76.3567876,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2858442344,
+    "lat": 32.2000572,
+    "lon": 76.3685289,
+    "tags": {
+      "amenity": "recycling",
+      "location": "overground",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3153843550,
+    "lat": 12.8502327,
+    "lon": 77.6626971,
+    "tags": {
+      "amenity": "recycling",
+      "name": "E-Waste Disposal Kiosk",
+      "operator": "ELCIA",
+      "recycling:clothes": "no",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3298923876,
+    "lat": 12.9566382,
+    "lon": 77.6560608,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:paper": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3313847819,
+    "lat": 12.9568134,
+    "lon": 77.6545474,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:cans": "yes",
+      "recycling:glass": "no",
+      "recycling:paper": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3369894895,
+    "lat": 12.975857,
+    "lon": 77.6444886,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3710229275,
+    "lat": 12.9481356,
+    "lon": 77.5999766,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Newspaper recycling store"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3836988199,
+    "lat": 12.978618,
+    "lon": 77.6360047,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:paper": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3921942655,
+    "lat": 15.4157405,
+    "lon": 75.0426682,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3993262535,
+    "lat": 12.9571268,
+    "lon": 77.6550423,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Sri Vinayaka Old Paper Mart",
+      "recycling:paper": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3997777103,
+    "lat": 13.0045986,
+    "lon": 77.6250087,
+    "tags": {
+      "addr:city": "Bangalore",
+      "addr:postcode": "560084",
+      "addr:street": "Hutchins 2nd Cross",
+      "amenity": "recycling",
+      "name": "Muniyappa Recycling",
+      "note": "Will come to your location to collect recyclable materials.",
+      "phone": "+91 9066080747",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4005718301,
+    "lat": 12.9622101,
+    "lon": 77.6444944,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:paper": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling:small_appliances": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4063568048,
+    "lat": 12.9449679,
+    "lon": 77.628935,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:paper": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4195979556,
+    "lat": 12.9181994,
+    "lon": 77.5958138,
+    "tags": {
+      "amenity": "recycling",
+      "opening_hours": "08:30-12:30,15:30-20:00",
+      "recycling:paper": "yes",
+      "recycling:scrap_metal": "yes",
+      "recycling_type": "centre",
+      "wheelchair": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4197757513,
+    "lat": 12.9204873,
+    "lon": 77.5957966,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Mahesh Waste Paper Mart",
+      "recycling:paper": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4386506500,
+    "lat": 13.0261242,
+    "lon": 77.6039117,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Omshakti Paper Mart"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4386506989,
+    "lat": 13.0240899,
+    "lon": 77.6032598,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Murugan Old Paper Mart"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4782947621,
+    "lat": 12.963322,
+    "lon": 77.6568552,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Paper Mart",
+      "name:en": "Paper Mart"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4810068222,
+    "lat": 18.9843198,
+    "lon": 72.8261077,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4922432823,
+    "lat": 32.2448593,
+    "lon": 76.3303195,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Waste Warriors",
+      "name:en": "Waste Warriors",
+      "website": "https://www.wastewarriors.org/"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5147014550,
+    "lat": 12.8063468,
+    "lon": 80.2246887,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Waste Papers Mart",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5170711399,
+    "lat": 11.876159,
+    "lon": 75.368837,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Kisan Plastic Collection Centre",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5301695521,
+    "lat": 12.9576577,
+    "lon": 77.6622725,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5530794628,
+    "lat": 11.9397206,
+    "lon": 79.8202705,
+    "tags": {
+      "amenity": "recycling",
+      "building": "retail",
+      "check_date": "2026-04-28",
+      "internet_access": "no",
+      "operator:type": "private",
+      "payment:cards": "no",
+      "payment:cash": "yes",
+      "payment:credit_cards": "no",
+      "payment:debit_cards": "no",
+      "recycling:PET": "yes",
+      "recycling:aluminium": "yes",
+      "recycling:aluminium_cans": "yes",
+      "recycling:batteries": "yes",
+      "recycling:books": "yes",
+      "recycling:bottles": "yes",
+      "recycling:cans": "yes",
+      "recycling:cardboard": "yes",
+      "recycling:electrical_appliances": "yes",
+      "recycling:glass": "yes",
+      "recycling:glass_bottles": "yes",
+      "recycling:magazines": "yes",
+      "recycling:metal_packaging": "yes",
+      "recycling:newspaper": "yes",
+      "recycling:paper": "yes",
+      "recycling:paper_packaging": "yes",
+      "recycling:plastic": "yes",
+      "recycling:plastic_bottle_caps": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling:scrap_metal": "yes",
+      "recycling:small_appliances": "yes",
+      "recycling_type": "centre",
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5537917121,
+    "lat": 12.9760697,
+    "lon": 77.6378342,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Venkateswara Paper Mart"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5570584569,
+    "lat": 12.9816004,
+    "lon": 80.2294099,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Tirumani Waste Paper Mart",
+      "recycling:paper": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5585635622,
+    "lat": 12.9745744,
+    "lon": 77.6393838,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Paper Mart"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5665966355,
+    "lat": 11.9378435,
+    "lon": 79.8205176,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5751458822,
+    "lat": 11.9902484,
+    "lon": 79.8341991,
+    "tags": {
+      "amenity": "recycling",
+      "name:en": "Waste Segregation Zone"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5960737890,
+    "lat": 28.5309101,
+    "lon": 77.21717,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Wajid"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7464621312,
+    "lat": 10.1669659,
+    "lon": 76.4381982,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Scrap Shop",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7472996221,
+    "lat": 9.3780732,
+    "lon": 76.5644502,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7525398616,
+    "lat": 10.4693127,
+    "lon": 76.1164129,
+    "tags": {
+      "amenity": "recycling",
+      "craft": "metal_works",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7944497755,
+    "lat": 22.030581,
+    "lon": 82.9584591,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8156850917,
+    "lat": 11.0244157,
+    "lon": 76.9013107,
+    "tags": {
+      "amenity": "recycling",
+      "name:en": "RKG",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8284509723,
+    "lat": 28.5169422,
+    "lon": 77.1797173,
+    "tags": {
+      "addr:city": "Delhi",
+      "addr:street": "ward no. 8, jain mandir dada badi",
+      "amenity": "recycling",
+      "contact:phone": "8448012691",
+      "name": "fulchan scrap",
+      "recycling:waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8284556362,
+    "lat": 28.6383872,
+    "lon": 77.1362982,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "8860256556",
+      "operator": "ram sundar",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8324256154,
+    "lat": 10.5957105,
+    "lon": 76.152649,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8339483098,
+    "lat": 28.6254873,
+    "lon": 77.0490079,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Om Vihar Scrap",
+      "recycling:metal": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8339515088,
+    "lat": 28.6074861,
+    "lon": 77.1024056,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8339612102,
+    "lat": 28.5331739,
+    "lon": 77.2178316,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Malik Recycler",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8339647415,
+    "lat": 28.5328614,
+    "lon": 77.2185319,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8347822974,
+    "lat": 9.1611224,
+    "lon": 76.5220841,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8375317477,
+    "lat": 28.5586561,
+    "lon": 77.2281475,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "9899360191",
+      "operator": "Prem Gupta",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8375360191,
+    "lat": 28.5780627,
+    "lon": 77.20107,
+    "tags": {
+      "addr:housenumber": "P-139",
+      "amenity": "recycling",
+      "contact:phone": "9810461856",
+      "operator": "Rajesh Trader",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8399912960,
+    "lat": 9.2246372,
+    "lon": 76.6776055,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8402401551,
+    "lat": 9.9719596,
+    "lon": 76.6040689,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8414540543,
+    "lat": 9.9712028,
+    "lon": 76.6076605,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8426912850,
+    "lat": 28.505545,
+    "lon": 77.1987643,
+    "tags": {
+      "addr:street": "370, Neb Sarai",
+      "amenity": "recycling",
+      "operator": "Monu",
+      "phone": "9811697464",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455171858,
+    "lat": 28.6477207,
+    "lon": 77.1830783,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "9990266830",
+      "operator": "Sanjay Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455231127,
+    "lat": 28.6248149,
+    "lon": 77.0827928,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "9818925571",
+      "operator": "Shankar kabadi store",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455252056,
+    "lat": 28.6553854,
+    "lon": 77.2252907,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+911178389249",
+      "operator": "Arun kabadi vala",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455263990,
+    "lat": 28.6018363,
+    "lon": 77.0674785,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919958231828",
+      "operator": "Chhotelal kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455268502,
+    "lat": 28.5722813,
+    "lon": 77.1674037,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919773525698",
+      "operator": "kabari wala",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455286937,
+    "lat": 28.5384502,
+    "lon": 77.28421,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Khan kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455319978,
+    "lat": 28.6685658,
+    "lon": 77.0719804,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919211843698",
+      "operator": "Gulson Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455326766,
+    "lat": 28.6123037,
+    "lon": 77.288571,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+918860504541",
+      "operator": "Aasho Malik Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455357906,
+    "lat": 28.6793814,
+    "lon": 77.262765,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919211576780",
+      "operator": "Mulla Ji Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8455375050,
+    "lat": 28.6715035,
+    "lon": 77.1493226,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+918587867512",
+      "operator": "Rama Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8457578540,
+    "lat": 28.7372689,
+    "lon": 77.1374533,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919871881655",
+      "operator": "Kabadi Ki Dukan",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8457599488,
+    "lat": 28.7323467,
+    "lon": 77.1907981,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Kabaddi Ram milan maurya",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8457624562,
+    "lat": 28.6791528,
+    "lon": 77.2066068,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Vinod Nagar Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8457645380,
+    "lat": 28.7624535,
+    "lon": 77.1860686,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919599319576",
+      "operator": "Vijay Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8457662200,
+    "lat": 28.6666537,
+    "lon": 77.078082,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919013057668",
+      "operator": "Shambhu Kabadi Ki Dukan Nihal Vihar",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458397474,
+    "lat": 28.7003092,
+    "lon": 77.2070039,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919311269222",
+      "operator": "Babu Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458448673,
+    "lat": 28.6701278,
+    "lon": 77.2989946,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919213961353",
+      "operator": "Omi Kabadi Shop",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458619368,
+    "lat": 28.618785,
+    "lon": 77.0887856,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "F.F. Kabari Shop",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458633498,
+    "lat": 28.6553647,
+    "lon": 77.1598564,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919654108223",
+      "operator": "Vijay Kabadi Shop",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458707446,
+    "lat": 28.7145401,
+    "lon": 77.2280371,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919229426721",
+      "operator": "Billu Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458748804,
+    "lat": 28.6077031,
+    "lon": 77.0482428,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Subhash scrap dealer",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458777636,
+    "lat": 28.6402218,
+    "lon": 77.0673658,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Naresh Chawla Scrap Store",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458851899,
+    "lat": 28.4681478,
+    "lon": 77.0869142,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919971723068",
+      "operator": "Santosh Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458890524,
+    "lat": 28.4945954,
+    "lon": 77.0597164,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+919213455066",
+      "operator": "Hira Lal",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8458905264,
+    "lat": 28.6974922,
+    "lon": 77.1859588,
+    "tags": {
+      "amenity": "recycling",
+      "contact:phone": "+917827011614",
+      "operator": "Firoj Kabadi",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8570694213,
+    "lat": 8.4727924,
+    "lon": 76.9794386,
+    "tags": {
+      "amenity": "recycling",
+      "name": "3R",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8725224024,
+    "lat": 9.5940052,
+    "lon": 76.4670018,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8838981069,
+    "lat": 9.2666903,
+    "lon": 76.7854596,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Akri kada",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8898496399,
+    "lat": 10.6932874,
+    "lon": 76.3436033,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9104733803,
+    "lat": 10.3680391,
+    "lon": 77.9874534,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9354555917,
+    "lat": 9.1534314,
+    "lon": 76.7372943,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Adoor muncipality plastic shredding centre",
+      "recycling_type": "centre",
+      "survey:date": "2021-12-21"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9864897717,
+    "lat": 18.5972303,
+    "lon": 73.7692466,
+    "tags": {
+      "amenity": "recycling",
+      "name": "\u0928\u094d\u092f\u0942 \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930 \u0938\u094d\u0915\u094d\u0930\u0945\u092a \u0938\u0947\u0902\u091f\u0930",
+      "name:en": "New Maharashtra scrap Center",
+      "name:mr": "\u0928\u094d\u092f\u0942 \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930 \u0938\u094d\u0915\u094d\u0930\u0945\u092a \u0938\u0947\u0902\u091f\u0930",
+      "phone": "9175940805",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924672,
+    "lat": 12.909,
+    "lon": 77.695,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924673,
+    "lat": 12.9223189,
+    "lon": 77.7168686,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924674,
+    "lat": 13.058757,
+    "lon": 77.5913487,
+    "tags": {
+      "amenity": "recycling",
+      "name": "BBMP Dry Waste Collection Center",
+      "name:kn": "\u0c92\u0ca3 \u0ca4\u0ccd\u0caf\u0cbe\u0c9c\u0ccd\u0caf \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6\u0c97\u0cc6 \u0cb8\u0ccd\u0ca5\u0cb3",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924675,
+    "lat": 12.872932,
+    "lon": 77.626696,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924676,
+    "lat": 12.8937647,
+    "lon": 77.6450451,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924677,
+    "lat": 12.9324471,
+    "lon": 77.5804136,
+    "tags": {
+      "amenity": "recycling",
+      "name": "BBMP Dry Waste Collection Center",
+      "name:kn": "\u0c92\u0ca3 \u0ca4\u0ccd\u0caf\u0cbe\u0c9c\u0ccd\u0caf \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6\u0c97\u0cc6 \u0cb8\u0ccd\u0ca5\u0cb3",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924678,
+    "lat": 12.9362412,
+    "lon": 77.5798381,
+    "tags": {
+      "amenity": "recycling",
+      "name": "BBMP Dry Waste Collection Center",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924679,
+    "lat": 12.9340268,
+    "lon": 77.6141786,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924680,
+    "lat": 12.918,
+    "lon": 77.57,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924681,
+    "lat": 12.9675164,
+    "lon": 77.5635708,
+    "tags": {
+      "amenity": "recycling",
+      "name": "BBMP Dry Waste Collection Center",
+      "name:kn": "\u0c92\u0ca3 \u0ca4\u0ccd\u0caf\u0cbe\u0c9c\u0ccd\u0caf \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6\u0c97\u0cc6 \u0cb8\u0ccd\u0ca5\u0cb3",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924682,
+    "lat": 13.0390052,
+    "lon": 77.5610671,
+    "tags": {
+      "amenity": "recycling",
+      "name": "BBMP Dry Waste Collection Center",
+      "name:kn": "\u0c92\u0ca3 \u0ca4\u0ccd\u0caf\u0cbe\u0c9c\u0ccd\u0caf \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6\u0c97\u0cc6 \u0cb8\u0ccd\u0ca5\u0cb3",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924683,
+    "lat": 12.988047,
+    "lon": 77.5797237,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924684,
+    "lat": 12.9750091,
+    "lon": 77.6441623,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924685,
+    "lat": 13.0092852,
+    "lon": 77.6187774,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10242924687,
+    "lat": 13.038,
+    "lon": 77.562,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10554245165,
+    "lat": 28.6195187,
+    "lon": 77.2275302,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10632949330,
+    "lat": 12.9169027,
+    "lon": 77.6021902,
+    "tags": {
+      "amenity": "recycling",
+      "name": "BBMP Dry Waste Collection Center",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10632949345,
+    "lat": 12.9188098,
+    "lon": 77.5848297,
+    "tags": {
+      "amenity": "recycling",
+      "name": "BBMP Dry Waste Collection Center",
+      "name:kn": "\u0c92\u0ca3 \u0ca4\u0ccd\u0caf\u0cbe\u0c9c\u0ccd\u0caf \u0ca8\u0cbf\u0cb0\u0ccd\u0cb5\u0cb9\u0ca3\u0cc6\u0c97\u0cc6 \u0cb8\u0ccd\u0ca5\u0cb3",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10926234349,
+    "lat": 28.7531465,
+    "lon": 77.161122,
+    "tags": {
+      "addr:block": "Swami Shardhanand Colony",
+      "addr:city": "Delhi",
+      "addr:khasra": "663",
+      "addr:suburb": "Bhalaswa Jahangir Puri",
+      "amenity": "recycling",
+      "building": "yes",
+      "building:levels": "1",
+      "contact:phone": "+91-92895-69489;+91-74283-83920",
+      "name": "Khan Enterprises",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11031707784,
+    "lat": 16.3582203,
+    "lon": 80.4014453,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Gorlavaripalem waste Container",
+      "recycling:green_waste": "yes",
+      "recycling:homeware": "yes",
+      "recycling:waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11116269055,
+    "lat": 10.0015917,
+    "lon": 76.357397,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Akri Kada"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11152241096,
+    "lat": 28.584371,
+    "lon": 77.2579622,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11156162841,
+    "lat": 13.0053751,
+    "lon": 77.6234665,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11216175696,
+    "lat": 9.9465634,
+    "lon": 76.302549,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Aakri Kada",
+      "recycling_type": "centre",
+      "shop": "second_hand"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11228345162,
+    "lat": 28.4733778,
+    "lon": 77.0921321,
+    "tags": {
+      "addr:street": "A55",
+      "amenity": "recycling",
+      "name": "M D Old Scrap",
+      "phone": "9899955510"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11257267129,
+    "lat": 9.946118,
+    "lon": 76.2953581,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2024-09-17",
+      "level": "0",
+      "name:signed": "no",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11257293113,
+    "lat": 9.9459645,
+    "lon": 76.2946822,
+    "tags": {
+      "amenity": "recycling",
+      "name:signed": "no",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11289565574,
+    "lat": 9.9494814,
+    "lon": 76.2920145,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2024-12-11",
+      "level": "0",
+      "name:signed": "no",
+      "recycling:aluminium": "yes",
+      "recycling:batteries": "yes",
+      "recycling:electrical_appliances": "yes",
+      "recycling:small_appliances": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11412682620,
+    "lat": 22.120141,
+    "lon": 69.3852697,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11698577861,
+    "lat": 27.1946716,
+    "lon": 77.9659043,
+    "tags": {
+      "amenity": "recycling",
+      "operator": "Yadu Agrotech (polyhouse)",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11704272915,
+    "lat": 28.5490833,
+    "lon": 77.2517979,
+    "tags": {
+      "amenity": "recycling",
+      "fixme": "Shop dealing in e-waste",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11795892107,
+    "lat": 28.5927792,
+    "lon": 77.2558441,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11904083759,
+    "lat": 28.5933623,
+    "lon": 77.120804,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Malik Scrape",
+      "recycling_type": "centre",
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11998405887,
+    "lat": 17.561062,
+    "lon": 80.6105383,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:glass_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12049307381,
+    "lat": 30.4643,
+    "lon": 79.4473351,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12066252754,
+    "lat": 31.62804,
+    "lon": 74.868285,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12066262320,
+    "lat": 31.628937,
+    "lon": 74.8691067,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12101166217,
+    "lat": 9.9495349,
+    "lon": 76.2921111,
+    "tags": {
+      "amenity": "recycling",
+      "name:signed": "no",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12188404633,
+    "lat": 9.9492717,
+    "lon": 76.2917457,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12192862002,
+    "lat": 9.9482927,
+    "lon": 76.292332,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12192884993,
+    "lat": 9.9488342,
+    "lon": 76.2998927,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12197516922,
+    "lat": 9.9527607,
+    "lon": 76.2993322,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12205246814,
+    "lat": 9.9534962,
+    "lon": 76.2987797,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12355197262,
+    "lat": 10.8765643,
+    "lon": 76.1011261,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Ijaz Mon Scrap",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12361544647,
+    "lat": 11.5298144,
+    "lon": 76.0151553,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12419251754,
+    "lat": 13.7186922,
+    "lon": 74.7577849,
+    "tags": {
+      "amenity": "recycling",
+      "building": "shed",
+      "check_date": "2024-12-13",
+      "internet_access": "no",
+      "name": "Solid Liquid Resource Management Centre, Vandse",
+      "operator:type": "government",
+      "recycling:aluminium": "yes",
+      "recycling:batteries": "yes",
+      "recycling:bottles": "yes",
+      "recycling:cans": "yes",
+      "recycling:food_waste": "yes",
+      "recycling:garden_waste": "yes",
+      "recycling:glass": "yes",
+      "recycling:glass_bottles": "yes",
+      "recycling:green_waste": "yes",
+      "recycling:light_bulbs": "yes",
+      "recycling:metal": "yes",
+      "recycling:metal_packaging": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling:scrap_metal": "yes",
+      "recycling_type": "centre",
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12423562858,
+    "lat": 9.9923134,
+    "lon": 76.2897302,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:beverage_cartons": "no",
+      "recycling:plastic": "no",
+      "recycling:plastic_bottles": "yes",
+      "recycling:plastic_packaging": "no",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12458790385,
+    "lat": 13.1824682,
+    "lon": 80.3157682,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2024-12-28",
+      "name": "Recycling Collection Center",
+      "phone": "+91 94447 15805",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12465547911,
+    "lat": 11.642644,
+    "lon": 76.1453099,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12558214491,
+    "lat": 9.5277762,
+    "lon": 76.8220929,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12558214492,
+    "lat": 9.527781,
+    "lon": 76.8221007,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:organic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12599821152,
+    "lat": 15.6109386,
+    "lon": 73.8274082,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:cans": "yes",
+      "recycling:glass": "yes",
+      "recycling:glass_bottles": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12599821160,
+    "lat": 15.6043372,
+    "lon": 73.8307601,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:glass_bottles": "yes",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12599902658,
+    "lat": 15.5808857,
+    "lon": 73.7584628,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12602879440,
+    "lat": 15.5977442,
+    "lon": 73.750524,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:cans": "yes",
+      "recycling:clothes": "yes",
+      "recycling:food_waste": "yes",
+      "recycling:green_waste": "yes",
+      "recycling:paper": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling:scrap_metal": "yes",
+      "recycling:shoes": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12635095082,
+    "lat": 15.5953085,
+    "lon": 73.7429346,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12654892195,
+    "lat": 15.576606,
+    "lon": 73.8222693,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bastora Panchayat Material Recovery Facility",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12695806331,
+    "lat": 15.5821971,
+    "lon": 73.822044,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12740950397,
+    "lat": 15.5969973,
+    "lon": 73.8155539,
+    "tags": {
+      "amenity": "recycling",
+      "covered": "yes",
+      "indoor": "no",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12743627501,
+    "lat": 22.6483874,
+    "lon": 88.3961478,
+    "tags": {
+      "amenity": "recycling",
+      "name": "MSW Dumping Site",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12747359273,
+    "lat": 15.6005807,
+    "lon": 73.8099654,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12794240466,
+    "lat": 13.0669404,
+    "lon": 77.5569476,
+    "tags": {
+      "amenity": "recycling",
+      "building": "retail",
+      "check_date": "2025-05-13",
+      "name": "Om Shakti Old Paper Mart",
+      "operator:type": "private",
+      "recycling:newspaper": "yes",
+      "recycling:paper": "yes",
+      "recycling:paper_packaging": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12850249307,
+    "lat": 25.2395656,
+    "lon": 86.9353191,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12850249308,
+    "lat": 25.2395016,
+    "lon": 86.9362603,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12850256311,
+    "lat": 25.2396268,
+    "lon": 86.9326322,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12850256312,
+    "lat": 25.2396308,
+    "lon": 86.9334486,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12850256313,
+    "lat": 25.2396196,
+    "lon": 86.9343394,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12850287213,
+    "lat": 25.2398274,
+    "lon": 86.9410508,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12864663165,
+    "lat": 19.1685867,
+    "lon": 72.9318659,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Sarvoday Paper And Metal Mart",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12915988673,
+    "lat": 28.5740751,
+    "lon": 77.2301709,
+    "tags": {
+      "amenity": "recycling",
+      "location": "overground",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12950860525,
+    "lat": 28.6005108,
+    "lon": 77.2237609,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12950994393,
+    "lat": 34.1641101,
+    "lon": 77.5842086,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12950996893,
+    "lat": 28.600806,
+    "lon": 77.2240744,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12965729419,
+    "lat": 28.5799826,
+    "lon": 77.1861848,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12987525251,
+    "lat": 34.1640805,
+    "lon": 77.5842035,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12987525252,
+    "lat": 34.1640491,
+    "lon": 77.5841971,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12987525253,
+    "lat": 34.164018,
+    "lon": 77.5841923,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12991072340,
+    "lat": 16.4934741,
+    "lon": 80.6897839,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:food_waste": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12993627312,
+    "lat": 16.5069966,
+    "lon": 80.6783582,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2025-07-11",
+      "internet_access": "no",
+      "name": "Kasturi Old Iron",
+      "opening_hours": "08:30-20:30",
+      "payment:cards": "no",
+      "payment:cash": "yes",
+      "payment:credit_cards": "no",
+      "payment:debit_cards": "no",
+      "phone": "+91 93921 36094",
+      "recycling_type": "centre",
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12993630809,
+    "lat": 16.5071105,
+    "lon": 80.6789611,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2025-07-11",
+      "name": "Samba Siva Plastic",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12993639246,
+    "lat": 16.506492,
+    "lon": 80.6795474,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2025-07-11",
+      "internet_access": "wlan",
+      "internet_access:fee": "no",
+      "name": "Venkatesh Iron Trash",
+      "opening_hours": "Mo-Sa 09:00-21:00",
+      "phone": "+91 93921 07213",
+      "recycling_type": "centre",
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12993700347,
+    "lat": 16.5092318,
+    "lon": 80.7219534,
+    "tags": {
+      "amenity": "recycling"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12995805823,
+    "lat": 19.2993135,
+    "lon": 72.8638312,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Samvariya Old Paper Mart",
+      "recycling_type": "centre",
+      "wheelchair": "no"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13075354407,
+    "lat": 15.6304181,
+    "lon": 73.7743218,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13075365274,
+    "lat": 15.6350129,
+    "lon": 73.7729574,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Tropical Dreams Recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13114134420,
+    "lat": 15.5887295,
+    "lon": 73.8147813,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13120597293,
+    "lat": 15.5886202,
+    "lon": 73.8142584,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13123604175,
+    "lat": 8.7438714,
+    "lon": 76.698212,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:cans": "yes",
+      "recycling:glass_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13137385571,
+    "lat": 8.7472018,
+    "lon": 76.7196603,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "operator": "Varkala Muncipality",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13137392721,
+    "lat": 8.7638359,
+    "lon": 76.7109122,
+    "tags": {
+      "amenity": "recycling",
+      "description": "Only For Plastic Bottles",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "operator": "Varkala Muncipality",
+      "recycling:cans": "no",
+      "recycling:glass_bottles": "no",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13138233798,
+    "lat": 8.8163841,
+    "lon": 76.704874,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13138236572,
+    "lat": 8.8096704,
+    "lon": 76.7017381,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13138274573,
+    "lat": 8.7686238,
+    "lon": 76.725094,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13138277544,
+    "lat": 8.805235,
+    "lon": 76.7004807,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13138310659,
+    "lat": 8.7670951,
+    "lon": 76.7127223,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140379463,
+    "lat": 8.731386,
+    "lon": 76.7139633,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140387911,
+    "lat": 8.750923,
+    "lon": 76.7025021,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140387918,
+    "lat": 8.7851499,
+    "lon": 76.6707469,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140388388,
+    "lat": 8.7352664,
+    "lon": 76.7044513,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140404265,
+    "lat": 8.7361428,
+    "lon": 76.709365,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140404915,
+    "lat": 8.7359307,
+    "lon": 76.7040891,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140414225,
+    "lat": 8.7842488,
+    "lon": 76.6713893,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140429606,
+    "lat": 8.7641705,
+    "lon": 76.6964487,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140433010,
+    "lat": 8.7813274,
+    "lon": 76.6766715,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13140479391,
+    "lat": 8.7394455,
+    "lon": 76.7062198,
+    "tags": {
+      "amenity": "recycling",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13141030246,
+    "lat": 8.7522757,
+    "lon": 76.718976,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13144834802,
+    "lat": 12.4789361,
+    "lon": 75.2737007,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13155263016,
+    "lat": 8.7393446,
+    "lon": 76.730568,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13155784310,
+    "lat": 8.7630144,
+    "lon": 76.701622,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13158238604,
+    "lat": 9.7177464,
+    "lon": 76.3190589,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13159202246,
+    "lat": 8.7440197,
+    "lon": 76.7355607,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "opening_hours": "24/7",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13159485657,
+    "lat": 9.6837937,
+    "lon": 76.3410703,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13167724773,
+    "lat": 9.6740037,
+    "lon": 76.4215297,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13167724778,
+    "lat": 9.6695384,
+    "lon": 76.4224351,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13207278584,
+    "lat": 10.1934937,
+    "lon": 76.5267238,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13207278585,
+    "lat": 10.1935135,
+    "lon": 76.5264537,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13376659944,
+    "lat": 9.6862982,
+    "lon": 76.3426732,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13376659945,
+    "lat": 9.6862972,
+    "lon": 76.3426743,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13390287201,
+    "lat": 9.6678018,
+    "lon": 76.5560722,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13407018112,
+    "lat": 12.990815,
+    "lon": 77.7217097,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Paper Mart",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13420305653,
+    "lat": 19.1640596,
+    "lon": 72.9387497,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bharat Paper Marr",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13447443830,
+    "lat": 9.0892482,
+    "lon": 76.4876173,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Amrita Recycling Centre",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13447844328,
+    "lat": 9.0882646,
+    "lon": 76.4859221,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911024,
+    "lat": 9.6761344,
+    "lon": 76.3921759,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911025,
+    "lat": 9.6761362,
+    "lon": 76.392179,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911026,
+    "lat": 9.6750703,
+    "lon": 76.3913112,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911027,
+    "lat": 9.6750691,
+    "lon": 76.3913146,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911028,
+    "lat": 9.6720924,
+    "lon": 76.3882009,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911029,
+    "lat": 9.6720889,
+    "lon": 76.388202,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911030,
+    "lat": 9.6636376,
+    "lon": 76.3828292,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911031,
+    "lat": 9.6636369,
+    "lon": 76.3828328,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911032,
+    "lat": 9.6522943,
+    "lon": 76.3741871,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911033,
+    "lat": 9.6522925,
+    "lon": 76.3741903,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911034,
+    "lat": 9.654977,
+    "lon": 76.3693214,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911035,
+    "lat": 9.6549743,
+    "lon": 76.369319,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911036,
+    "lat": 9.6565361,
+    "lon": 76.3681824,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911037,
+    "lat": 9.6565337,
+    "lon": 76.3681851,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911038,
+    "lat": 9.6578286,
+    "lon": 76.3665718,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911039,
+    "lat": 9.6578281,
+    "lon": 76.3665755,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911040,
+    "lat": 9.6582773,
+    "lon": 76.3644077,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911041,
+    "lat": 9.658277,
+    "lon": 76.3644113,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911042,
+    "lat": 9.6566433,
+    "lon": 76.358839,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911043,
+    "lat": 9.6566443,
+    "lon": 76.3588425,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911045,
+    "lat": 9.655534,
+    "lon": 76.3516083,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911046,
+    "lat": 9.6555345,
+    "lon": 76.351612,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911047,
+    "lat": 9.654429,
+    "lon": 76.3466807,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911048,
+    "lat": 9.65443,
+    "lon": 76.3466843,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911049,
+    "lat": 9.6544067,
+    "lon": 76.3428249,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911050,
+    "lat": 9.6544031,
+    "lon": 76.3428247,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911051,
+    "lat": 9.6543773,
+    "lon": 76.3406964,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911052,
+    "lat": 9.6543774,
+    "lon": 76.3407001,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911053,
+    "lat": 9.684988,
+    "lon": 76.351686,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13555911054,
+    "lat": 9.6849873,
+    "lon": 76.3516896,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572628390,
+    "lat": 28.591489,
+    "lon": 77.2309323,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572902172,
+    "lat": 9.6550894,
+    "lon": 76.3377171,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572902173,
+    "lat": 9.6551002,
+    "lon": 76.3376609,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572902174,
+    "lat": 9.6651738,
+    "lon": 76.3422214,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572902175,
+    "lat": 9.665171,
+    "lon": 76.3422239,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572923334,
+    "lat": 9.6761435,
+    "lon": 76.3921555,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572923335,
+    "lat": 9.6767553,
+    "lon": 76.39323,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13572923336,
+    "lat": 9.6767531,
+    "lon": 76.3932328,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13574906009,
+    "lat": 28.5730792,
+    "lon": 77.2304906,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:small_electrical_appliances": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13576667532,
+    "lat": 9.5573804,
+    "lon": 76.5728945,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13576667533,
+    "lat": 9.5573824,
+    "lon": 76.5728913,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13593505895,
+    "lat": 9.6748437,
+    "lon": 76.3978259,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13593505896,
+    "lat": 9.6748407,
+    "lon": 76.397824,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13593505897,
+    "lat": 9.6715569,
+    "lon": 76.4082716,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13593505898,
+    "lat": 9.6715562,
+    "lon": 76.4082751,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13593505899,
+    "lat": 9.6716602,
+    "lon": 76.4147247,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling:plastic_packaging": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13593505900,
+    "lat": 9.6716614,
+    "lon": 76.4147281,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:green_waste": "yes",
+      "recycling:organic": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13602673821,
+    "lat": 12.9574601,
+    "lon": 77.6594624,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2026-02-26",
+      "name": "Selvam Old Paper Mart",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13607844518,
+    "lat": 12.9609617,
+    "lon": 77.7137155,
+    "tags": {
+      "amenity": "recycling",
+      "check_date": "2026-02-28",
+      "name": "Priya Old Paper",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13620896620,
+    "lat": 17.4470503,
+    "lon": 78.3479735,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:food_waste": "yes",
+      "recycling:green_waste": "yes",
+      "recycling:paper": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13679632525,
+    "lat": 9.8311671,
+    "lon": 76.3611218,
+    "tags": {
+      "amenity": "recycling",
+      "name": "Bottle Booth",
+      "recycling:plastic_bottles": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13703652001,
+    "lat": 20.2853125,
+    "lon": 85.8339375,
+    "tags": {
+      "addr:housenumber": "Ward No. 34",
+      "addr:postcode": "751010",
+      "addr:street": "Madhusudhan Nagar Road",
+      "amenity": "recycling",
+      "contact:facebook": "bmcbbsr",
+      "contact:instagram": "bmcbbsr",
+      "contact:twitter": "bmcbbsr",
+      "email": "info@bmc.gov.in",
+      "name": "Micro Composting Center (MCC), Bhubaneswar Municipal Corporation (BMC)",
+      "opening_hours": "Mo-Su 10:00-17:00",
+      "operator": "BMC",
+      "phone": "+91 674 2431253",
+      "recycling_type": "centre",
+      "website": "http://bmc.gov.in"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13773028239,
+    "lat": 19.0786782,
+    "lon": 72.8376471,
+    "tags": {
+      "amenity": "recycling",
+      "location": "overground",
+      "operator": "The Recycling Company",
+      "recycling:electrical_appliances": "yes",
+      "recycling:small_appliances": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13867131372,
+    "lat": 12.9377353,
+    "lon": 80.1345033,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:paper": "yes",
+      "recycling:plastic": "yes",
+      "recycling:scrap_metal": "yes",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13945738972,
+    "lat": 28.6414057,
+    "lon": 77.2998998,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962925341,
+    "lat": 11.9293717,
+    "lon": 79.8352573,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962925342,
+    "lat": 11.9312456,
+    "lon": 79.8356125,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962961032,
+    "lat": 11.9331075,
+    "lon": 79.8359743,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962968210,
+    "lat": 11.9303845,
+    "lon": 79.8354394,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962969970,
+    "lat": 11.9308526,
+    "lon": 79.8355393,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962975877,
+    "lat": 11.9290729,
+    "lon": 79.8351906,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962975878,
+    "lat": 11.9335227,
+    "lon": 79.8360472,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes;used",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13962982291,
+    "lat": 11.9339981,
+    "lon": 79.8361124,
+    "tags": {
+      "amenity": "recycling",
+      "recycling:plastic": "yes;used",
+      "recycling_type": "container"
+    }
+  },
+  {
+    "type": "node",
+    "id": 13995354057,
+    "lat": 17.4171787,
+    "lon": 78.493829,
+    "tags": {
+      "addr:city": "Hyderabad",
+      "addr:district": "Telangana",
+      "addr:housenumber": "1-4-887/3",
+      "addr:postcode": "500020",
+      "addr:street": "Bakaram, Kavadiguda, Hyderabad",
+      "amenity": "recycling",
+      "email": "renovix11@gmail.com",
+      "name": "KGN Enterprises Scrap buyer in Hyderabad",
+      "opening_hours": "24 hours",
+      "payment:cash": "yes",
+      "phone": "+91 9700436932",
+      "recycling_type": "centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 14001871598,
+    "lat": 10.2697429,
+    "lon": 76.4001154,
+    "tags": {
+      "amenity": "recycling",
+      "recycling_type": "container"
+    }
+  }
+]

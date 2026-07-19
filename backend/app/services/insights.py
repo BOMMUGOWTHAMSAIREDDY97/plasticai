@@ -21,7 +21,11 @@ class InsightGenerator:
                     "title": "Initial System Setup Complete",
                     "description": "Please add Collection Centers and Recycling Plants in the Administration panel to begin monitoring.",
                     "type": "info",
-                    "metric": "0 Facilities"
+                    "metric": "0 Facilities",
+                    "policy_directives": [
+                        "Mandate all regional administrators to register collection centers within 7 days.",
+                        "Establish baseline operational targets for the newly registered facilities."
+                    ]
                 }
             ]
 
@@ -48,7 +52,12 @@ class InsightGenerator:
                     "title": "Increase in Waste Influx",
                     "description": f"Plastic waste collection has increased by {pct_diff:.1f}% compared to last month. Ensure downstream processing facilities have sufficient capacity.",
                     "type": "warning",
-                    "metric": f"+{pct_diff:.1f}% Influx"
+                    "metric": f"+{pct_diff:.1f}% Influx",
+                    "policy_directives": [
+                        "Allocate additional collection resources to high-density areas.",
+                        "Review capacity limits at primary downstream processing facilities.",
+                        "Initiate a targeted public awareness campaign regarding proper sorting."
+                    ]
                 })
             else:
                 insights.append({
@@ -56,7 +65,11 @@ class InsightGenerator:
                     "title": "Stable Waste Collection",
                     "description": f"Plastic waste collection volume has stabilized, showing a minor change of {pct_diff:.1f}% compared to last month.",
                     "type": "success",
-                    "metric": f"{pct_diff:.1f}% Influx"
+                    "metric": f"{pct_diff:.1f}% Influx",
+                    "policy_directives": [
+                        "Maintain current operational budget and routing schedules.",
+                        "Shift focus towards improving the purity of collected waste streams."
+                    ]
                 })
         else:
             insights.append({
@@ -64,7 +77,11 @@ class InsightGenerator:
                 "title": "Initial Monthly Logging Active",
                 "description": f"Total plastic waste collected this month is {this_month_collected:,.0f} kg. Collecting historical baseline data.",
                 "type": "info",
-                "metric": f"{this_month_collected:,.0f} kg"
+                "metric": f"{this_month_collected:,.0f} kg",
+                "policy_directives": [
+                    "Require daily log submissions to establish an accurate baseline.",
+                    "Conduct an end-of-month review to set future collection targets."
+                ]
             })
 
         # 2. Recycling Rate Trend
@@ -79,7 +96,12 @@ class InsightGenerator:
                     "title": "High Recycling Efficiency",
                     "description": f"The cumulative recycling rate is standing strong at {recycling_rate:.1f}%. Processing centers are successfully sorting and recovering recyclable polymers.",
                     "type": "success",
-                    "metric": f"{recycling_rate:.1f}% Rate"
+                    "metric": f"{recycling_rate:.1f}% Rate",
+                    "policy_directives": [
+                        "Reward top-performing sorting facilities with performance incentives.",
+                        "Publish an annual sustainability report highlighting the achieved recycling efficiency.",
+                        "Increase targets for next quarter by 5%."
+                    ]
                 })
             else:
                 insights.append({
@@ -87,7 +109,12 @@ class InsightGenerator:
                     "title": "Recycling Rate Improvement Needed",
                     "description": f"The current recycling rate is {recycling_rate:.1f}%. Investigate Sorting Facility metrics to identify purity bottleneck causes.",
                     "type": "info",
-                    "metric": f"{recycling_rate:.1f}% Rate"
+                    "metric": f"{recycling_rate:.1f}% Rate",
+                    "policy_directives": [
+                        "Audit underperforming sorting facilities within the next 14 days.",
+                        "Implement mandatory re-training for manual sorting staff.",
+                        "Evaluate potential upgrades for automated optical sorting machinery."
+                    ]
                 })
         else:
             insights.append({
@@ -95,7 +122,10 @@ class InsightGenerator:
                 "title": "Processing Logs Pending",
                 "description": "Establish log entries for waste processing to evaluate total recycling rate benchmarks.",
                 "type": "info",
-                "metric": "0% Rate"
+                "metric": "0% Rate",
+                "policy_directives": [
+                    "Enforce mandatory processing logging protocols for all plant managers."
+                ]
             })
 
         # 3. Environmental Impact Insight: CO2 savings
@@ -106,7 +136,11 @@ class InsightGenerator:
                 "title": "Estimated Carbon Reductions",
                 "description": f"By recycling {total_recycled:,.0f} kg of plastic polymers, the system has offset approximately {co2_saved_kg:,.0f} kg of CO2 equivalent emissions.",
                 "type": "success",
-                "metric": f"{co2_saved_kg/1000:.1f}t CO2 Saved"
+                "metric": f"{co2_saved_kg/1000:.1f}t CO2 Saved",
+                "policy_directives": [
+                    "Submit carbon offset data for regional environmental tax credits.",
+                    "Incorporate emission reduction metrics into public corporate communications."
+                ]
             })
             
         # 4. Landfill Diversion Rate
@@ -119,7 +153,11 @@ class InsightGenerator:
                     "title": "Landfill Diversion Success",
                     "description": f"Only {landfill_rate:.1f}% of processed plastic was sent to landfills. Diverting plastic from long-term decomposition sites matches regional goals.",
                     "type": "success",
-                    "metric": f"{100 - landfill_rate:.1f}% Diverted"
+                    "metric": f"{100 - landfill_rate:.1f}% Diverted",
+                    "policy_directives": [
+                        "Formalize current waste diversion protocols as permanent policy.",
+                        "Explore markets for upcycling the remaining non-recyclable fractions."
+                    ]
                 })
             else:
                 insights.append({
@@ -127,7 +165,11 @@ class InsightGenerator:
                     "title": "High Landfill Dependency",
                     "description": f"Approximately {landfill_rate:.1f}% of plastic is routing to landfills. Consider upgrading Waste-to-Energy or sorting facilities to capture value.",
                     "type": "warning",
-                    "metric": f"{landfill_rate:.1f}% Landfill"
+                    "metric": f"{landfill_rate:.1f}% Landfill",
+                    "policy_directives": [
+                        "Impose a temporary restriction on landfill tipping to encourage secondary sorting.",
+                        "Subsidize feasibility studies for new Waste-to-Energy infrastructure."
+                    ]
                 })
 
         # 5. Top District by Collection Volume
@@ -148,7 +190,12 @@ class InsightGenerator:
                 "title": "Regional Hotspot Identified",
                 "description": f"Waste collection volume is highest in {top_district_query[0]} district, accounting for {top_district_query[1]:,.0f} kg of plastic waste.",
                 "type": "info",
-                "metric": f"{top_district_query[0]}"
+                "metric": f"{top_district_query[0]}",
+                "policy_directives": [
+                    f"Direct 20% more funding to {top_district_query[0]} for processing infrastructure.",
+                    f"Assign specialized monitoring teams to audit collection centers in {top_district_query[0]}.",
+                    "Implement localized behavioral interventions to reduce waste generation at the source."
+                ]
             })
 
         return insights
