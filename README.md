@@ -1,7 +1,5 @@
 # 🌿 PlasticVision AI
 
-<div align="center">
-
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111+-009688.svg?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![Next.js](https://img.shields.io/badge/Next.js-16.2+-black.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00599C.svg?style=for-the-badge&logo=opencv&logoColor=white)](https://ultralytics.com)
@@ -12,13 +10,11 @@
 
 **Enterprise-Grade AI Environmental Intelligence, Real-Time Plastic Waste Detection, Geospatial GIS Mapping, and Circular Economy Decision Support Platform.**
 
-[Features](#-key-features) • [Architecture](#-system-architecture) • [Getting Started](#-getting-started) • [API Reference](#-complete-api-reference) • [Taxonomy](#-supported-plastic-taxonomy) • [Deployment](#-deployment)
-
-</div>
+[Features](#key-features) • [Architecture](#system-architecture) • [Getting Started](#getting-started) • [API Reference](#complete-api-reference) • [Taxonomy](#supported-plastic-taxonomy) • [Deployment](#deployment)
 
 ---
 
-## 📌 Executive Overview
+## Executive Overview
 
 **PlasticVision AI** is a state-of-the-art environmental intelligence and computer vision platform engineered to combat global plastic pollution. By unifying edge computer vision (YOLOv8), bidirectional WebSocket video streaming, GIS geospatial telemetry, and time-series forecasting, PlasticVision AI provides municipalities, smart city administrators, recycling facilities, and NGOs with end-to-end visibility over the entire plastic waste lifecycle.
 
@@ -26,56 +22,65 @@ From real-time webcam detection of single-use plastics to pan-India municipal co
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🎥 1. Real-Time Edge & Browser AI Scanner
+### 1. Real-Time Edge & Browser AI Scanner
+
 - **Zero-Latency WebSocket Stream (`/ws/video`)**: Streams browser webcam frames encoded as base64 directly to the backend vision engine.
 - **YOLOv8 Neural Detection**: High-accuracy detection of plastic bottles, cups, containers, cutlery, and packaging materials.
 - **Centroid-Based Motion Tracker**: Computes Euclidean distance centroids across frames to generate continuous object trajectories, frame persistence counts, and dynamic bounding boxes.
 - **Heuristic Fallback Engine**: If PyTorch/CUDA acceleration is unavailable, an automated OpenCV computer vision fallback activates seamlessly to ensure uninterrupted monitoring.
 
-### 📸 2. Geotagged Incident Reporting & Mobile Capture
+### 2. Geotagged Incident Reporting & Mobile Capture
+
 - **HTML5 Geolocation Integration**: Captures precise GPS coordinates (Latitude & Longitude) alongside snapshot evidence.
 - **Automated Reverse Geocoding**: Resolves coordinates into localized human-readable street and district names.
 - **Debris Density Assessment**: Calculates plastic coverage percentages from image segmentations.
 - **Automated Dispatch & SMTP Alerts**: Instantly triggers email notifications to municipal response teams upon reporting hazardous plastic dumps.
 
-### 🗺️ 3. Geospatial GIS Facility Map (Leaflet.js)
+### 3. Geospatial GIS Facility Map (Leaflet.js)
+
 - **Pan-India Monitoring Network**: Pre-seeded coordinates covering all **36 States and Union Territories of India**.
 - **Facility Clustering & Status Filters**: Toggle between **Collection Centers** and **Polymer Recycling Plants**.
 - **Interactive Telemetry Modals**: Inspect live facility capacity, current load (kg), operational efficiency (%), and geographical coordinates.
 
-### 🔄 4. Material Flow Stream (Sankey-Style Flow)
+### 4. Material Flow Stream (Sankey-Style Flow)
+
 - Tracks waste migration through the entire municipal lifecycle:
   $$\text{Collection Centers} \longrightarrow \text{Sorting Facilities} \longrightarrow \begin{cases} \text{Recycling Plants} & (\approx 65\%) \\ \text{Waste-to-Energy (WtE)} & (\approx 18\%) \\ \text{Sanitary Landfills} & (\approx 12\%) \\ \text{Rejected / Slag} & (\approx 5\%) \end{cases}$$
 - Provides instant visibility into sorting contamination rates and leakage hotspots.
 
-### 📈 5. Circular Economy & ESG Analytics
+### 5. Circular Economy & ESG Analytics
+
 - **Material Recovery & Purity Rates**: Real-time measurement of mechanical recycling yields.
 - **Carbon Offset Metrics**: Computes metric tons of greenhouse gas emissions avoided ($\text{kg CO}_2\text{e saved}$) by diverting plastics from incineration.
 - **Economic Value Estimation**: Estimates scrap recovery commodity revenue in USD based on current polymer market rates.
 
-### 🔮 6. Time-Series AI Waste Forecasting
+### 6. Time-Series AI Waste Forecasting
+
 - Multi-horizon predictive curves across **7-day, 30-day, and 90-day** operational intervals.
 - Incorporates compound growth trends, seasonal weekend surges, and expanding confidence uncertainty bands.
 - Outputs an **Environmental Risk Index (0–100)** to assist municipal resource allocation.
 
-### 💡 7. Automated Policy & Action Directives
+### 7. Automated Policy & Action Directives
+
 - Rule-based AI insight engine evaluates facility throughput against historical moving averages.
 - Generates categorized notifications (**Success**, **Warning**, **Critical**) paired with concrete policy directives (e.g., rerouting collection fleets, scheduling depot expansions).
 
-### 📑 8. Multi-Format Audit & Compliance Center
+### 8. Multi-Format Audit & Compliance Center
+
 - **Executive PDF Summaries**: Generated dynamically via `ReportLab` with formatted tables, status badges, and executive signatures.
 - **Excel Workbooks (`.xlsx`)**: Structured, multi-tab spreadsheets built using `openpyxl`.
 - **Raw CSV Logs**: Instant streaming export for ingest into third-party business intelligence (PowerBI, Tableau) pipelines.
 
-### 🛡️ 9. Dual Authentication & Role-Based Access Control (RBAC)
+### 9. Dual Authentication & Role-Based Access Control (RBAC)
+
 - Multi-tier security supporting **Firebase Authentication** alongside native **OAuth2 / JWT Token Bearer** schemes.
 - Role management supporting **Admin**, **Operator**, and **Viewer** privilege levels.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -138,7 +143,7 @@ flowchart TD
 
 ---
 
-## 📂 Project Directory Structure
+## Project Directory Structure
 
 ```text
 plastic/
@@ -210,11 +215,12 @@ plastic/
 
 ---
 
-## ⚡ Getting Started
+## Getting Started
 
 ### Prerequisites
 
 Ensure you have the following installed on your host system:
+
 - **Python 3.10+** ([python.org](https://www.python.org/downloads/))
 - **Node.js 18.0+** and **npm** ([nodejs.org](https://nodejs.org/))
 - **Git** ([git-scm.com](https://git-scm.com/))
@@ -225,12 +231,14 @@ Ensure you have the following installed on your host system:
 ### Method 1: Local Development (Recommended)
 
 #### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/BOMMUGOWTHAMSAIREDDY97/plasticai.git
 cd plasticai
 ```
 
 #### 2. Backend Setup
+
 ```bash
 # Navigate to backend directory
 cd backend
@@ -250,13 +258,17 @@ pip install -r requirements.txt
 # Start the FastAPI development server
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
+
 The backend API is now accessible at:
+
 - **API Base**: `http://localhost:8000`
 - **Interactive Swagger Docs**: `http://localhost:8000/docs`
 - **ReDoc Documentation**: `http://localhost:8000/redoc`
 
 #### 3. Frontend Setup
+
 In a new terminal window:
+
 ```bash
 # Navigate to frontend directory
 cd frontend
@@ -267,6 +279,7 @@ npm install
 # Start the Next.js development server
 npm run dev
 ```
+
 Open your browser and navigate to **`http://localhost:3000`**.
 
 ---
@@ -295,7 +308,7 @@ docker-compose up --build
 
 ---
 
-## 🔑 Default Credentials & Initial Seeding
+## Default Credentials & Initial Seeding
 
 On first initialization, the platform automatically provisions a superuser account:
 
@@ -306,6 +319,7 @@ On first initialization, the platform automatically provisions a superuser accou
 | **Role** | `Admin` |
 
 ### Seeding Rich Telemetry Data
+
 To populate the database with realistic pan-India data (covering all 36 States/UTs, collection centers, recycling facilities, and 30-day collection histories):
 
 1. Log into the dashboard with the admin credentials above.
@@ -314,9 +328,9 @@ To populate the database with realistic pan-India data (covering all 36 States/U
 
 ---
 
-## 📡 Complete API Reference
+## Complete API Reference
 
-### 🔐 Authentication (`/auth`)
+### Authentication (`/auth`)
 
 | Method | Endpoint | Description | Auth Required |
 | :--- | :--- | :--- | :---: |
@@ -327,7 +341,7 @@ To populate the database with realistic pan-India data (covering all 36 States/U
 
 ---
 
-### 📊 Dashboard & Metrics (`/dashboard`)
+### Dashboard & Metrics (`/dashboard`)
 
 | Method | Endpoint | Description | Auth Required |
 | :--- | :--- | :--- | :---: |
@@ -337,7 +351,7 @@ To populate the database with realistic pan-India data (covering all 36 States/U
 
 ---
 
-### 📈 Analytics & Circular Economy (`/analytics`)
+### Analytics & Circular Economy (`/analytics`)
 
 | Method | Endpoint | Description | Auth Required |
 | :--- | :--- | :--- | :---: |
@@ -346,7 +360,7 @@ To populate the database with realistic pan-India data (covering all 36 States/U
 
 ---
 
-### 🗺️ Facilities & Locations (`/locations`)
+### Facilities & Locations (`/locations`)
 
 | Method | Endpoint | Description | Auth Required |
 | :--- | :--- | :--- | :---: |
@@ -355,7 +369,7 @@ To populate the database with realistic pan-India data (covering all 36 States/U
 
 ---
 
-### 📸 Scans & Detection (`/scans` & `/ws`)
+### Scans & Detection (`/scans` & `/ws`)
 
 | Method | Endpoint | Description | Auth Required |
 | :--- | :--- | :--- | :---: |
@@ -366,19 +380,19 @@ To populate the database with realistic pan-India data (covering all 36 States/U
 
 ---
 
-### 📑 Reports & Downloads (`/reports`)
+### Reports & Downloads (`/reports`)
 
 | Method | Endpoint | Description | Auth Required |
 | :--- | :--- | :--- | :---: |
 | `GET` | `/reports/list` | List all generated audit reports | Bearer Token |
 | `POST` | `/reports/generate` | Queue creation of a new scheduled report | Bearer Token |
 | `GET` | `/reports/download/pdf` | Download formatted Executive Summary PDF (`ReportLab`) | Bearer Token |
-| `GET` | `/reports/download/xlsx`| Download formatted Excel workbook (`openpyxl`) | Bearer Token |
+| `GET` | `/reports/download/xlsx` | Download formatted Excel workbook (`openpyxl`) | Bearer Token |
 | `GET` | `/reports/download/csv` | Stream raw CSV data export | Bearer Token |
 
 ---
 
-### 🛡️ Administration (`/admin`)
+### Administration (`/admin`)
 
 | Method | Endpoint | Description | Auth Required |
 | :--- | :--- | :--- | :---: |
@@ -389,7 +403,7 @@ To populate the database with realistic pan-India data (covering all 36 States/U
 
 ---
 
-## 🏷️ Supported Plastic Taxonomy
+## Supported Plastic Taxonomy
 
 PlasticVision AI classifies plastic materials using standardized international resin identification codes (RIC):
 
@@ -403,7 +417,7 @@ PlasticVision AI classifies plastic materials using standardized international r
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 ### Backend Configuration (`backend/.env`)
 
@@ -447,7 +461,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID="your_app_id"
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Cloud Deployment Strategy
 
@@ -467,65 +481,71 @@ NEXT_PUBLIC_FIREBASE_APP_ID="your_app_id"
 ```
 
 - **Frontend Deployment (Vercel)**:
+
   1. Import the repository into [Vercel](https://vercel.com).
   2. Set Root Directory to `frontend`.
   3. Add environment variable `NEXT_PUBLIC_API_URL` pointing to your hosted FastAPI backend.
   4. Deploy.
 
 - **Backend Deployment (Render / Railway / AWS EC2)**:
+
   1. Configure the build command: `pip install -r backend/requirements.txt`.
   2. Configure start command: `uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT`.
   3. Attach persistent volume storage for `/uploads` and SQLite database (or connect a managed PostgreSQL instance).
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Domain | Technology | Purpose |
 | :--- | :--- | :--- |
 | **Computer Vision** | [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) | Real-time object detection and plastic classification |
-| **Image Processing**| [OpenCV](https://opencv.org/) | Frame transformation, image encoding, centroid tracking |
-| **Backend Framework**| [FastAPI](https://fastapi.tiangolo.com/) | High-performance asynchronous REST & WebSocket API |
+| **Image Processing** | [OpenCV](https://opencv.org/) | Frame transformation, image encoding, centroid tracking |
+| **Backend Framework** | [FastAPI](https://fastapi.tiangolo.com/) | High-performance asynchronous REST & WebSocket API |
 | **ASGI Server** | [Uvicorn](https://www.uvicorn.org/) | Lightning-fast ASGI HTTP/WebSocket server |
 | **Database ORM** | [SQLAlchemy](https://www.sqlalchemy.org/) | Enterprise SQL abstraction & schema management |
-| **Frontend Framework**| [Next.js 16](https://nextjs.org/) (App Router) | React 19 server and client component rendering |
+| **Frontend Framework** | [Next.js 16](https://nextjs.org/) (App Router) | React 19 server and client component rendering |
 | **Styling** | [Tailwind CSS](https://tailwindcss.com/) | Responsive glassmorphic dark-mode design system |
 | **Motion** | [Framer Motion](https://www.framer.com/motion/) | Smooth UI transitions, ambient glows, and animations |
-| **Data Visualization**| [Chart.js](https://www.chartjs.org/) + `react-chartjs-2` | Interactive line, bar, doughnut, and area graphs |
+| **Data Visualization** | [Chart.js](https://www.chartjs.org/) + `react-chartjs-2` | Interactive line, bar, doughnut, and area graphs |
 | **GIS Mapping** | [Leaflet.js](https://leafletjs.com/) | Interactive map tiles and custom facility markers |
 | **Document Export** | [ReportLab](https://www.reportlab.com/) & [OpenPyXL](https://openpyxl.readthedocs.io/) | PDF generation & Excel workbook construction |
 | **Authentication** | JWT (PyJWT / passlib) + [Firebase](https://firebase.google.com/) | Secure dual-mode identity verification and RBAC |
-| **Containerization**| [Docker](https://www.docker.com/) & Docker Compose | Multi-container reproducible deployment |
+| **Containerization** | [Docker](https://www.docker.com/) & Docker Compose | Multi-container reproducible deployment |
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions to PlasticVision AI are welcome! To contribute:
 
 1. **Fork the Repository** on GitHub.
 2. **Create a Feature Branch**:
+
    ```bash
    git checkout -b feature/amazing-feature
    ```
+
 3. **Commit your Changes**:
+
    ```bash
    git commit -m "feat: Add high-resolution plastic segmentation model"
    ```
+
 4. **Push to Branch**:
+
    ```bash
    git push origin feature/amazing-feature
    ```
+
 5. **Open a Pull Request**.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
 
 ---
 
-<div align="center">
-  <sub>Developed for smarter cities, cleaner oceans, and a sustainable circular future.</sub>
-</div>
+*Developed for smarter cities, cleaner oceans, and a sustainable circular future.*
