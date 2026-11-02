@@ -29,6 +29,8 @@ export default function AIInsights() {
     };
     
     fetchInsights();
+    const interval = setInterval(fetchInsights, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   const getTypeStyles = (type) => {

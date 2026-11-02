@@ -63,6 +63,10 @@ export default function Administration() {
 
   useEffect(() => {
     fetchData();
+    const interval = setInterval(() => {
+      fetchData();
+    }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   const handleCenterSubmit = async (e) => {

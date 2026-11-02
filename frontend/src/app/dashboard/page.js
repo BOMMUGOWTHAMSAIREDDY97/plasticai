@@ -285,6 +285,10 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchDashboardData();
+    const interval = setInterval(() => {
+      fetchDashboardData();
+    }, 5000);
+    return () => clearInterval(interval);
   }, [filters]);
 
   const triggerSeed = async () => {
